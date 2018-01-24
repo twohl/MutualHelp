@@ -8,6 +8,14 @@ import org.springframework.stereotype.Repository;
 import java.util.List;
 @Repository
 public interface UserMapper {
-    @Select("select * from users where username = #{username}")
-    User selectUserByname(@Param("username") String username);
+
+    void addUser(User user);
+
+    void editUserInfo(User user);
+
+    User selectUserByName(String username);
+
+    List selectAllUsers();
+
+
 }
