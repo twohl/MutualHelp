@@ -1,4 +1,4 @@
-package com.script.dao;
+package com.script.entity;
 
 import java.io.Serializable;
 
@@ -7,6 +7,7 @@ public class Login implements Serializable{
     private String username;
     private String password;
     private User user;
+    private String lastLogin;
     public String getUsername() {
         return username;
     }
@@ -29,5 +30,13 @@ public class Login implements Serializable{
 
     public void setUser(User user) {
         this.user = user;
+    }
+
+    public String getLastLogin() {
+        return lastLogin;
+    }
+
+    public void setLastLogin(String lastLogin) {
+        this.lastLogin = lastLogin;
     }
 }

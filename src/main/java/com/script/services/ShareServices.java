@@ -6,25 +6,9 @@ import java.util.List;
 import java.util.logging.Logger;
 
 @Service
-public class entertainmentServices {
+public class ShareServices {
 
-    public void chatToUser(){
 
-    }
-
-    public void chatToNearBy(){
-
-    }
-
-    public List getChatWithUser(){
-
-        return null;
-    }
-
-    public List getChatNear(){
-
-        return null;
-    }
 
     public void shareNearBy(){
 

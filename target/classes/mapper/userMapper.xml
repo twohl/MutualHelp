@@ -3,7 +3,60 @@
         PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
         "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 <mapper namespace="com.script.mapper.UserMapper">
-    <select id="selectUserByName" parameterType="String" resultType="com.script.mapper.UserMapper">
-        select * from users u where u.name = #{username}
+
+    <resultMap id="UserInfo" type="com.script.entity.UserInfo">
+        <id column="id" property="id"/>
+        <result column="address" property="address"/>
+        <result column="sign" property="sign"/>
+        <result column="hobby" property="hobby"/>
+    </resultMap>
+
+
+
+    <resultMap id="User" type="com.script.entity.User">
+        <id column="id" property="id"/>
+        <result column="nickname" property="nickname"/>
+        <result column="gender" property="gender"/>
+        <association property="userInfo" column="user_ex_id" select="selectUserInfoById"/>
+    </resultMap>
+
+    <select id="selectUserInfoById" resultMap="UserInfo">
+        SELECT * from user_extend where id = #{user_ex_id)}
     </select>
+
+    <insert id="addUserInfo" useGeneratedKeys="true" keyProperty="user_ex_id" parameterType="java.util.Map">
+        INSERT INTO
+        user_extend(address,sign,hobby)
+        VALUES (#{userinfo.address},#{userinfo.sign},#{userinfo.hobby});
+    </insert>
+
+    <insert id="addUser" useGeneratedKeys="true" parameterType="java.util.Map" keyProperty="user_id">
+        INSERT  into
+        user( nickname, gender, lng, lat, user_ex_id)
+        VALUES(#{nickname},#{gender},#{lng},#{lat},#{user_ex_id});
+    </insert>
+
+    <select id="selectUserByPosition" parameterType="java.util.Map" resultType="com.script.entity.User">
+        SELECT *
+        from user u
+        where (lng BETWEEN #{lng_min} AND #{lng_max})
+         AND (lat BETWEEN #{lat_min} AND #{lat_max})
+    </select>
+
+    <select id="selectUserById" resultMap="User">
+        SELECT * FROM user WHERE id = #{id}
+    </select>
+
+    <update id="updateUserInfo" parameterType="java.util.Map">
+        UPDATE user_extend
+        SET sign = #{userinfo.sign},hobby = #{userinfo.hobby},address = #{userinfo.address}
+        where id = #{userinfo.user_ex_id}
+    </update>
+
+    <update id="updateUser" parameterType="java.util.Map">
+        UPDATE user
+        SET  lng = #{lng},lat = {lat},gender = #{gender},nickname = #{nickname}
+        WHERE id = #{user_id}
+    </update>
+
 </mapper>

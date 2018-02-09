@@ -1,4 +1,4 @@
-package com.script.utils;
+package com.script.utils.resultType;
 
 import com.script.myEnum.ResultCode;
 

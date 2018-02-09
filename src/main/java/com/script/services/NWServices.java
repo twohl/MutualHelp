@@ -1,4 +1,4 @@
-package com.script.services.nwServices;
+package com.script.services;
 
 import org.springframework.stereotype.Service;
 

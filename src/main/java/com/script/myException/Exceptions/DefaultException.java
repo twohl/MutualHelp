@@ -1,20 +1,22 @@
-package com.script.myException;
+package com.script.myException.Exceptions;
+
+import com.script.myEnum.ResultCode;
 
 public class DefaultException extends RuntimeException {
 
-    private int errorCode;
+    private ResultCode errorCode;
     private String message;
 
-    public DefaultException(int errorCode,String message){
+    public DefaultException(ResultCode errorCode,String message){
         this.errorCode = errorCode;
         this.message = message;
     }
 
-    public int getErrorCode() {
+    public ResultCode getErrorCode() {
         return errorCode;
     }
 
-    public void setErrorCode(int errorCode) {
+    public void setErrorCode(ResultCode errorCode) {
         this.errorCode = errorCode;
     }
 

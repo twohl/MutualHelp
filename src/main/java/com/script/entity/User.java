@@ -1,4 +1,4 @@
-package com.script.dao;
+package com.script.entity;
 
 import java.io.Serializable;
 

@@ -5,7 +5,7 @@
         xmlns="http://java.sun.com/xml/ns/javaee"
         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
         xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd">
-
+    <!-- 指定监听器加载的log4j配置文件 -->
     <display-name>Archetype Created Web Application</display-name>
     <context-param>
         <param-name>contextConfigLocation</param-name>
@@ -46,6 +46,6 @@
 
 
     <welcome-file-list>
-        <welcome-file>index.jsp</welcome-file>
+        <welcome-file>index.html</welcome-file>
     </welcome-file-list>
 </web-app>
