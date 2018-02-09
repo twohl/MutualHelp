@@ -1,5 +1,6 @@
 package com.script.controller;
 
+import com.script.utils.resultType.Result;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
@@ -9,28 +10,34 @@ import java.util.List;
 @RequestMapping("/nw")
 public class NWController {
 
-    public String publishNW(){
+    public Result publishNW(){
 
-        return "";
+
+        Result result = new Result();
+        return result;
     }
 
-    public String accNW(){
+    public Result accNW(){
 
-        return "";
+        Result result = new Result();
+        return result;
     }
 
-    public String cancleNW(){
+    public Result cancleNW(){
 
-        return "";
+        Result result = new Result();
+        return result;
     }
 
-    public String evaluateNW(){
+    public Result evaluateNW(){
 
-        return "";
+        Result result = new Result();
+        return result;
     }
 
-    public String getNWList(){
+    public Result getNWList(){
 
-        return "";
+        Result result = new Result();
+        return result;
     }
 }

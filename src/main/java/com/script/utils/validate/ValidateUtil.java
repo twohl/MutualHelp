@@ -102,6 +102,8 @@ public class ValidateUtil {
 
         Integer user_id = (Integer) map.get("user_id");
 
+        String nickname = (String) map.get("nickname");
+
         Map userInfo = (Map) map.get("userinfo");
 
         if(username == null || "".equals(username)){
@@ -114,6 +116,10 @@ public class ValidateUtil {
 
         if(userInfo == null || userInfo.get("user_ex_id") == null){
             throw new DefaultException(ResultCode.NOREFER_USERINFO_EXCEPTION,"未找到该用户信息，更新失败");
+        }
+
+        if(nickname == null || "".equals(nickname)){
+            throw new DefaultException(ResultCode.NONICKNAME_EXCEPTION,"未填写昵称");
         }
 
 

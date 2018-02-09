@@ -6,6 +6,7 @@ import com.script.entity.User;
 import com.script.myEnum.ResultCode;
 import com.script.myException.Exceptions.DefaultException;
 import com.script.utils.adapter.PositionAdapter;
+import com.script.utils.jiami.JiaMiPass;
 import org.apache.log4j.Logger;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -51,6 +52,10 @@ public class UserServices {
         if(login !=null){
             throw new DefaultException(ResultCode.REPATE_THE_USERNAME,"重复的用户名");
         }
+
+        String newPass = JiaMiPass.jiami((String)map.get("password"));
+
+        map.put("password",newPass);
 
         dao.regist(map);                                        //注册
 
