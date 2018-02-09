@@ -1,4 +1,4 @@
 package com.script.mapper;
 
-public class UserMapper {
+public class ShareMapper {
 }

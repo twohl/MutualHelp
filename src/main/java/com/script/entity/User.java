@@ -1,21 +1,20 @@
-package com.script.entity;
-
+package com.script.dao;
 
 import java.io.Serializable;
-public class User implements Serializable{
-    private String username;
+
+public class User extends Position implements Serializable{
+    private static final long serialVersionUID = 2;
+    private int id;
     private String nickname;
     private int gender;
-    private String address;
-    private String hobby;
-    private String sign;
+    private UserInfo userInfo;
 
-    public String getUsername() {
-        return username;
+    public int getId() {
+        return id;
     }
 
-    public void setUsername(String username) {
-        this.username = username;
+    public void setId(int id) {
+        this.id = id;
     }
 
     public String getNickname() {
@@ -34,29 +33,11 @@ public class User implements Serializable{
         this.gender = gender;
     }
 
-    public String getAddress() {
-        return address;
+    public UserInfo getUserInfo() {
+        return userInfo;
     }
 
-    public void setAddress(String address) {
-        this.address = address;
+    public void setUserInfo(UserInfo userInfo) {
+        this.userInfo = userInfo;
     }
-
-    public String getHobby() {
-        return hobby;
-    }
-
-    public void setHobby(String hobby) {
-        this.hobby = hobby;
-    }
-
-    public String getSign() {
-        return sign;
-    }
-
-    public void setSign(String sign) {
-        this.sign = sign;
-    }
-
-
 }

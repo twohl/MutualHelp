@@ -1,4 +1,4 @@
 package com.script.entity;
 
-public class Note {
+public class ChatId {
 }

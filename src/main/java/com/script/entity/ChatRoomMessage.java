@@ -1,11 +1,11 @@
 package com.script.entity;
 
+import java.io.Serializable;
 import java.util.Date;
 
-public class Chatroom {
+public class ChatRoom implements Serializable {
+    private static final long serialVersionUID = 9;
     private User user;
-    private double lng;
-    private double lat;
     private Date date;
     private String content;
 
@@ -15,22 +15,6 @@ public class Chatroom {
 
     public void setUser(User user) {
         this.user = user;
-    }
-
-    public double getLng() {
-        return lng;
-    }
-
-    public void setLng(double lng) {
-        this.lng = lng;
-    }
-
-    public double getLat() {
-        return lat;
-    }
-
-    public void setLat(double lat) {
-        this.lat = lat;
     }
 
     public Date getDate() {

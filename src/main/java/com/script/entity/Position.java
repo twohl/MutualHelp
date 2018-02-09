@@ -1,20 +1,11 @@
-package com.script.entity;
+package com.script.dao;
 
 import java.io.Serializable;
 
-public class UserPosition implements Serializable{
-
-    private User user;
+public class Position implements Serializable{
+    private static final long serialVersionUID = 1;
     private double lng;
     private double lat;
-
-    public User getUser() {
-        return user;
-    }
-
-    public void setUser(User user) {
-        this.user = user;
-    }
 
     public double getLng() {
         return lng;
