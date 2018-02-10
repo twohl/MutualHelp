@@ -1166,7 +1166,7 @@
     <foreign-key id="282" parent="235" name="FK_notes_share">
       <ColNames>target_id</ColNames>
       <RefSchemaName>muhelp</RefSchemaName>
-      <RefTableName>share</RefTableName>
+      <RefTableName>user</RefTableName>
       <RefColNames>id</RefColNames>
     </foreign-key>
     <column id="283" parent="236" name="id">

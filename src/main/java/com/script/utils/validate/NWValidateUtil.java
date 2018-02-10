@@ -30,6 +30,18 @@ public class NWValidateUtil {
         }
         logger.debug("Util调用:***成功取得数据***");
     }
+
+    public static void validateEditFormat(Map map){
+        logger.debug("Util调用:***验证编辑NW的格式***");
+
+        validateInteger(map,"nw_id","未获取到notWork ID","错误的ID格式");
+
+        validateString(map,"name","未填写notWork名称");
+
+        validateString(map,"content","未填写notWork具体内容");
+
+        logger.debug("Util调用:***NW编辑格式正确***");
+    }
     public static void validateNWFormat(Map map){
 
         logger.debug("Util调用:***验证发布NW的格式***");

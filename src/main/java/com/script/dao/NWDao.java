@@ -60,6 +60,16 @@ public class NWDao {
     }
 
     @Transactional
+    public void editNW(Map map){
+        logger.debug("DAO层调用:***更新nw表中信息***");
+
+        notWorkMapper.updateNoteWork(map);
+
+        logger.debug("DAO层调用:***更新nw表信息成功***");
+    }
+
+
+    @Transactional
     public void cancleNW(Map map){
         logger.debug("DAO层调用:***更新notWork表的状态等信息***");
 

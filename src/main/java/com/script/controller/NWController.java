@@ -92,8 +92,17 @@ public class NWController {
         logger.debug("controller层调用:***获取nw信息成功***");
         return result;
     }
-//
-//    public Result editNW(Map map){
-//
-//    }
+
+    @RequestMapping(value = "/edit",method = RequestMethod.POST)
+    public Result editNW(@RequestBody Map map){
+        logger.debug("controller层调用:***修改nw信息***");
+
+        services.va_editNW(map);
+
+        logger.debug("controller层调用:***nw信息修改成功***");
+
+        Result result = new Result(ResultCode.DATAUPDATE_SUCCESS,"信息修改成功",null);
+
+        return result;
+    }
 }

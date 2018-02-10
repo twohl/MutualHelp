@@ -105,6 +105,16 @@ public class NWServices {
         return notWork;
     }
 
+    public void va_editNW(Map map){
+        logger.debug("services层调用:***修改nw信息***");
+
+        validateGetOrAccFormat(map);
+
+        dao.editNW(map);
+
+        logger.debug("sercices层调用:***nw信息修改成功***");
+    }
+
     private Map addPublishParam(Map map){
         Login login = userDao.getLoginByUserName(map);  //根据username 获取到userID
         Date date = new Date();

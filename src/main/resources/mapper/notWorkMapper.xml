@@ -36,14 +36,17 @@
     <update id="updateNoteWork" parameterType="java.util.Map">
         update notwork
         <choose>
-          <when test="accpter != null and acctime != null and acctime != ''">
-            SET accepter = #{accpter},acctime = #{acctime},
-          </when>
-            <otherwise>
-                SET
-            </otherwise>
+            <when test="accpter != null and acctime != null and acctime != ''">
+               SET accepter = #{accpter},acctime = #{acctime},state = #{state}
+            </when>
+            <when test="name != null and name != '' and content != null and content != null">
+                SET name = #{name},content = #{content}
+            </when>
+            <when test="state !=null and state != ''">
+                SET state = #{state}
+            </when>
         </choose>
-        state = #{state}
+
         where id = #{nw_id}
     </update>
 
