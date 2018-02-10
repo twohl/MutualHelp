@@ -7,11 +7,14 @@ public class NotWork implements Serializable {
     private static final long serialVersionUID = 6;
     private int id;
     private String name;
+    private String content;
     private User organiser;
     private User accepter;
     private double lng;
     private double lat;
+    private Date organtime;
     private Date  acctime;
+    private double price;
     private int state;
 
     public int getId() {
@@ -28,6 +31,14 @@ public class NotWork implements Serializable {
 
     public void setName(String name) {
         this.name = name;
+    }
+
+    public String getContent() {
+        return content;
+    }
+
+    public void setContent(String content) {
+        this.content = content;
     }
 
     public User getOrganiser() {
@@ -62,12 +73,28 @@ public class NotWork implements Serializable {
         this.lat = lat;
     }
 
+    public Date getOrgantime() {
+        return organtime;
+    }
+
+    public void setOrgantime(Date organtime) {
+        this.organtime = organtime;
+    }
+
     public Date getAcctime() {
         return acctime;
     }
 
     public void setAcctime(Date acctime) {
         this.acctime = acctime;
+    }
+
+    public double getPrice() {
+        return price;
+    }
+
+    public void setPrice(double price) {
+        this.price = price;
     }
 
     public int getState() {

@@ -15,6 +15,8 @@ import org.springframework.stereotype.Component;
 import javax.xml.bind.DataBindingException;
 import java.util.Map;
 
+import static com.script.utils.validate.DateTypeValidateUtil.validateString;
+
 @Component
 @Aspect
 public class PurviewCertification {
@@ -34,19 +36,14 @@ public class PurviewCertification {
 
         logger.debug("aop:***验证权限***");
 
-        String username = (String) map.get("username");
-
         String lastLogin = (String) map.get("lastLogin");
 
+        validateString(map,"username","还没有登陆,请您登陆");
 
-        if(username == null || "".equals(username)){
-            throw new DefaultException(ResultCode.NOLOGIN_EXCEPTION,"还没有登陆,请您登陆");
-        }
-        if(lastLogin == null || "".equals(lastLogin)){
-            throw new DefaultException(ResultCode.PURVIEW_CER_EXCEPTION,"登陆过期,请重新登陆");
-        }
+        validateString(map,"lastLogin","登陆过期,请重新登陆");
 
         String realLastLogin = userDao.getLoginByUserName(map).getLastLogin();
+
         if(!lastLogin.equals(realLastLogin)){
             throw new DefaultException(ResultCode.PURVIEW_CER_EXCEPTION,"登陆过期,请重新登陆");
         }

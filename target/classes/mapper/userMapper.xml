@@ -43,8 +43,8 @@
          AND (lat BETWEEN #{lat_min} AND #{lat_max})
     </select>
 
-    <select id="selectUserById" resultMap="User">
-        SELECT * FROM user WHERE id = #{id}
+    <select id="selectUserById" parameterType="java.util.Map" resultMap="User">
+        SELECT * FROM user WHERE id = #{user_id}
     </select>
 
     <update id="updateUserInfo" parameterType="java.util.Map">

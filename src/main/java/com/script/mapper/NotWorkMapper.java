@@ -2,13 +2,16 @@ package com.script.mapper;
 
 import com.script.entity.NotWork;
 
+import java.util.List;
+import java.util.Map;
+
 public interface NotWorkMapper {
 
-    void addNotWork(NotWork notWork);
+    void addNotWork(Map map);
 
-    void updateNoteWork(NotWork notWork);
+    void updateNoteWork(Map map);
 
-    NotWork[] selectAllNotWork();
+    List selectNotWorkByPosition(Map map);
 
-    NotWork selectNotWorkByid(int id);
+    NotWork selectNotWorkById(Map map);
 }

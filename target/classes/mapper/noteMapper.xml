@@ -4,4 +4,10 @@
         "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 <mapper namespace="com.script.mapper.NoteMapper">
 
+    <insert id="addNote" parameterType="java.util.Map" useGeneratedKeys="true">
+        INSERT INTO
+        notes(nw_id, user_id, content, target_id,price)
+        VALUES(#{nw_id},#{user_id},#{content},#{target_id},#{price})
+    </insert>
+
 </mapper>

@@ -6,7 +6,7 @@ import com.script.entity.User;
 import com.script.myEnum.ResultCode;
 import com.script.myException.Exceptions.DefaultException;
 import com.script.utils.adapter.PositionAdapter;
-import com.script.utils.jiami.JiaMiPass;
+import com.script.utils.encrypt.EncryptPass;
 import org.apache.log4j.Logger;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -16,7 +16,7 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
-import static com.script.utils.validate.ValidateUtil.*;
+import static com.script.utils.validate.UserValidateUtil.*;
 
 @Service
 public class UserServices {
@@ -47,27 +47,17 @@ public class UserServices {
 
         validateRegistFormat(map);                              //验证注册信息的完整性
 
-        Login login = dao.getLoginByUserName(map);
-
-        if(login !=null){
-            throw new DefaultException(ResultCode.REPATE_THE_USERNAME,"重复的用户名");
-        }
-
-        String newPass = JiaMiPass.jiami((String)map.get("password"));
-
-        map.put("password",newPass);
-
         dao.regist(map);                                        //注册
 
         logger.debug("services层调用:***注册成功***");
 
     }
 
-    public User getUser(int id){
+    public User getUser(Map map){
 
         logger.debug("services层调用:***获取用户详细信息***");
 
-        User user = dao.getUser(id);                            //获取用户详细信息
+        User user = dao.getUser(map);                            //获取用户详细信息
 
         validateGetDate(user);                                  //验证是否取得数据
 

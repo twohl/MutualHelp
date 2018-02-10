@@ -4,4 +4,59 @@
         "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 <mapper namespace="com.script.mapper.NotWorkMapper">
 
+    <resultMap id="NotWork" type="com.script.entity.NotWork">
+        <id column="id" property="id"/>
+        <result column="name" property="name"/>
+        <result column="content" property="content"/>
+        <result column="lng" property="lng"/>
+        <result column="lat" property="lat"/>
+        <result column="state" property="state"/>
+        <result column="organtime" property="organtime"/>
+        <result column="acctime" property="acctime"/>
+        <result column="price" property="price"/>
+        <association column="organiser" property="organiser" select="getOrgan"/>
+        <association column="accepter" property="accepter" select="getAcc"/>
+    </resultMap>
+
+    <select id="getOrgan" resultType="com.script.entity.User">
+        SELECT * FROM user where id = #{organiser}
+    </select>
+
+    <select id="getAcc" resultType="com.script.entity.User">
+        SELECT * FROM user WHERE id = #{accepter}
+    </select>
+
+
+    <insert id="addNotWork" parameterType="java.util.Map" useGeneratedKeys="true">
+        insert into
+        notwork(name,content,lng,lat,organiser,organtime)
+        VALUES (#{name},#{content},#{lng},#{lat},#{organiser},#{organtime})
+    </insert>
+
+    <update id="updateNoteWork" parameterType="java.util.Map">
+        update notwork
+        <choose>
+          <when test="accpter != null and acctime != null and acctime != ''">
+            SET accepter = #{accpter},acctime = #{acctime},
+          </when>
+            <otherwise>
+                SET
+            </otherwise>
+        </choose>
+        state = #{state}
+        where id = #{nw_id}
+    </update>
+
+    <select id="selectNotWorkById" parameterType="java.util.Map" resultMap="NotWork">
+        SELECT *
+        FROM notwork
+        WHERE id = #{nw_id}
+    </select>
+
+    <select id="selectNotWorkByPosition" parameterType="java.util.Map" resultMap="NotWork">
+        SELECT *
+        FROM notwork
+         where (lng BETWEEN #{lng_min} AND #{lng_max})
+         AND (lat BETWEEN #{lat_min} AND #{lat_max})
+    </select>
 </mapper>

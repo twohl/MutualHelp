@@ -2,9 +2,11 @@ package com.script.mapper;
 
 import com.script.entity.Note;
 
+import java.util.Map;
+
 public interface NoteMapper {
 
-    void addNote(Note note);
+    void addNote(Map map);
 
     void delNoteByUser(int user_id);
 

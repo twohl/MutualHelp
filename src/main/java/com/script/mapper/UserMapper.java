@@ -17,5 +17,5 @@ public interface UserMapper {
 
     List<User> selectUserByPosition(Map map);
 
-    User selectUserById(int user_id);
+    User selectUserById(Map map);
 }

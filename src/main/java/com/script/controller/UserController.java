@@ -19,7 +19,7 @@ public class UserController {
     @Autowired
     private UserServices services;
 
-    @RequestMapping("/regist")
+    @RequestMapping(value = "/regist",method = RequestMethod.PUT)
     public Result regist(@RequestBody Map map){
 
         logger.debug("controller层调用:***开始注册***");
@@ -29,7 +29,7 @@ public class UserController {
         return result;
     }
 
-    @RequestMapping("/login")
+    @RequestMapping(value = "/login",method = RequestMethod.POST)
     public Result login(@RequestBody Map map){
 
         logger.debug("controller层调用:***输入用户名密码,开始登陆***");
@@ -40,7 +40,7 @@ public class UserController {
         return result;
     }
 
-    @RequestMapping("/userList")
+    @RequestMapping(value = "/userList",method = RequestMethod.POST)
     public Result getUserList(@RequestBody Map map){
 
         logger.debug("controller层调用:***获取用户列表***");
@@ -50,19 +50,19 @@ public class UserController {
         return result;
     }
 
-    @RequestMapping("/userInfo/{id}")
-    public Result getUserInfo(@PathVariable("id") int id){
+    @RequestMapping(value = "/userInfo",method = RequestMethod.POST)
+    public Result getUserInfo(@RequestBody Map map){
 
         logger.debug("controller层调用:***获取用户详细信息***");
 
-        User user = services.getUser(id);
+        User user = services.getUser(map);
         Result result = new Result(ResultCode.GETDATA_SUCCESS,"用户信息拉取成功",user);
 
         logger.debug("controller层调用:***获取用户详细信息成功***");
         return result;
     }
 
-    @RequestMapping("/edit")
+    @RequestMapping(value = "/edit",method = RequestMethod.POST)
     public Result EditUserInfo(@RequestBody Map map){
 
         logger.debug("controller层调用:***修改用户个人信息***");
@@ -74,4 +74,5 @@ public class UserController {
 
         return result;
     }
+
 }
