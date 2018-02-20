@@ -3,15 +3,25 @@
         PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
         "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 <mapper namespace="com.script.mapper.ChatIdMapper">
-    <insert id="addChatId" parameterType="com.script.entity.ChatId" >
+
+    <resultMap id="ChatId" type="com.script.entity.ChatId">
+        <result column="id" property="id"/>
+        <association property="user1" column="user1" select="selectUserById"/>
+        <association property="user2" column="user2" select="selectUserById"/>
+    </resultMap>
+
+    <select id="selectUserById" parameterType="java.util.Map" resultType="com.script.entity.User">
+        SELECT * FROM user WHERE id = #{user1}
+    </select>
+    <insert id="addChatId" parameterType="java.util.Map" useGeneratedKeys="true">
         INSERT into
-        chat(id, user1, user2)
-        VALUES (#{id},#{user1.id},#{user2.id})
+        chat(user1,user2)
+        VALUES (#{user1},#{user2})
     </insert>
-    <select id="selectChatIdByUser" resultType="com.script.entity.ChatId">
+    <select id="selectChatIdByUser" parameterType="java.util.Map" resultMap="ChatId">
         SELECT *
         FROM chat
-        WHERE ( user1 = #{user1} and user2 = #{user2} )
-        OR ( user1 = #{user2} and user2 = #{user1})
+        WHERE (user1 = #{user1} and user2 = #{user2})
+        OR (user1 = #{user2} and user2 = #{user1})
     </select>
 </mapper>

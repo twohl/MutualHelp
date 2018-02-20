@@ -3,11 +3,13 @@ package com.script.mapper;
 import com.script.entity.ChatRoomMessage;
 
 import java.util.Date;
+import java.util.List;
+import java.util.Map;
 
 public interface ChatRoomMessageMapper {
-    void addChatRoomMessage(ChatRoomMessage chatRoomMessage);
+    void addChatRoomMessage(Map map);
 
-    void delChatRoomMessageBeforeDate(Date date);
+    void delChatRoomMessageBeforeDate(Map map);
 
-    ChatRoomMessage[] selectChatRoomMessageAfterDate(Date date);
+    List selectChatRoomMessageAfterDate(Map map);
 }

@@ -3,7 +3,7 @@ package com.script.entity;
 import java.io.Serializable;
 import java.util.Date;
 
-public class ChatRoomMessage implements Serializable {
+public class ChatRoomMessage extends Position implements Serializable {
     private static final long serialVersionUID = 9;
     private User user;
     private Date date;

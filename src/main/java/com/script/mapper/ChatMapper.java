@@ -5,16 +5,16 @@ import com.script.entity.User;
 import org.apache.ibatis.annotations.Select;
 
 import java.util.Date;
+import java.util.List;
+import java.util.Map;
 
 public interface ChatMapper {
 
-    void addChat(Chat chat);
+    void addChat(Map map);
 
-    Chat[] selectChatAfterDate(Date date);
+    List selectChatAfterDate(Map map);
 
-    Chat[] selectChatBeforeDate(Date date);
-
-    void delChatBeforeDate(Date date);
+    void delChatBeforeDate(Map map);
 
 
 }

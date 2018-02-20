@@ -3,7 +3,7 @@ package com.script.entity;
 import java.io.Serializable;
 import java.util.Date;
 
-public class Share implements Serializable{
+public class Share extends Position implements Serializable{
     private static final long serialVersionUID = 5;
     private int id;
     private String title;

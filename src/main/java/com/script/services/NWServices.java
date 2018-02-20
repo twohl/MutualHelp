@@ -4,6 +4,7 @@ import com.script.dao.NWDao;
 import com.script.dao.UserDao;
 import com.script.entity.Login;
 import com.script.entity.NotWork;
+import com.script.utils.addParam.AddParam;
 import org.apache.log4j.Logger;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -14,6 +15,8 @@ import java.util.List;
 import java.util.Map;
 
 import static com.script.utils.adapter.PositionAdapter.getPositionRangMap;
+import static com.script.utils.addParam.AddParam.*;
+import static com.script.utils.validate.DateTypeValidateUtil.*;
 import static com.script.utils.validate.NWValidateUtil.*;
 
 @Service
@@ -23,6 +26,9 @@ public class NWServices {
 
     private static final SimpleDateFormat format = new SimpleDateFormat("yy-MM-dd HH:mm:ss");
 
+
+    @Autowired
+    private AddParam addParam;
     @Autowired
     private NWDao dao;
 
@@ -32,7 +38,7 @@ public class NWServices {
     public void va_publishNW(Map map){
         logger.debug("services层调用:***发布notwork***");
 
-        map = addPublishParam(map);             //添加时间，添加必备参数
+        map = addParam.addPublishParam(map);             //添加时间，添加必备参数
 
         validateNWFormat(map);                  //验证发布格式
 
@@ -45,7 +51,7 @@ public class NWServices {
 
         logger.debug("services层调用:***接取notWork***");
 
-        map = addACCParam(map);                     //添加时间，添加必备参数
+        map = addParam.addACCParam(map);                     //添加时间，添加必备参数
 
         validateGetOrAccFormat(map);                     //验证接受nw格式
 
@@ -62,7 +68,7 @@ public class NWServices {
 
         Login login = userDao.getLoginByUserName(map);
 
-        map.put("user_id",login.getUser().getId());
+        map.put("user_id",login.getUser().getId()+"");
 
         dao.cancleNW(map);
 
@@ -83,7 +89,7 @@ public class NWServices {
 
         logger.debug("services层调用:***获取nw列表***");
 
-        validatePositionFormat(map);
+        validatePosition(map);
 
         map = getPositionRangMap(map);
 
@@ -108,28 +114,11 @@ public class NWServices {
     public void va_editNW(Map map){
         logger.debug("services层调用:***修改nw信息***");
 
-        validateGetOrAccFormat(map);
+        validateEditFormat(map);
 
         dao.editNW(map);
 
         logger.debug("sercices层调用:***nw信息修改成功***");
-    }
-
-    private Map addPublishParam(Map map){
-        Login login = userDao.getLoginByUserName(map);  //根据username 获取到userID
-        Date date = new Date();
-        String organtime = format.format(date);
-        map.put("organtime",organtime);             //将当前时间存储为发布nw的时间
-        map.put("organiser",login.getUser().getId());
-        return map;
-    }
-    private Map addACCParam(Map map){
-        Login login = userDao.getLoginByUserName(map);  //根据username 获取到userID
-        Date date = new Date();
-        String acctime = format.format(date);
-        map.put("acctime",acctime);             //将当前时间存储未接受nw的时间
-        map.put("accpter",login.getUser().getId());
-        return map;
     }
 
 }

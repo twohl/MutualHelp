@@ -3,9 +3,11 @@ package com.script.mapper;
 import com.script.entity.ChatId;
 import com.script.entity.User;
 
+import java.util.Map;
+
 public interface ChatIdMapper {
 
-    void addChatId(ChatId chatId);
+    void addChatId(Map map);
 
-    ChatId selectChatIdByUser(int user1,int user2);
+    ChatId selectChatIdByUser(Map map);
 }

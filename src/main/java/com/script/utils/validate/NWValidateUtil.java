@@ -11,26 +11,6 @@ import static com.script.utils.validate.DateTypeValidateUtil.*;
 public class NWValidateUtil {
     private final static Logger logger = Logger.getLogger(NWValidateUtil.class);
 
-    public static void validatePositionFormat(Map map){
-        logger.debug("Util调用:***验证位置信息格式***");
-
-        validateDouble(map,"lng","未获取到位置信息","错误的位置信息");
-
-        validateDouble(map,"lat","未获取到位置信息","错误的位置信息");
-
-        logger.debug("Util调用:***位置信息验证成功***");
-    }
-
-
-    public static void validateGetDate(Object obj){
-
-        logger.debug("Util调用:***验证是否取得数据***");
-        if(obj == null){
-            throw new DefaultException(ResultCode.NODATAINDB_EXCEPTION,"取得数据为空");
-        }
-        logger.debug("Util调用:***成功取得数据***");
-    }
-
     public static void validateEditFormat(Map map){
         logger.debug("Util调用:***验证编辑NW的格式***");
 
@@ -50,9 +30,9 @@ public class NWValidateUtil {
 
         validateString(map,"content","未填写notWork内容");
 
-        validateDouble(map,"lng","未获取到位置信息","错误的输入类型");
+        validatePosition(map);
 
-        validateDouble(map,"lat","未获取到位置信息","错误的输入类型");
+        validateDouble(map,"price","没有定义报酬","错误的price");
 
         logger.debug("Util调用:***NW发布格式正确***");
 
@@ -86,8 +66,6 @@ public class NWValidateUtil {
         validateString(map,"content","未填写评价内容");
 
         validateInteger(map,"target_id","没有接取不能评价","错误的User ID");
-
-        validateDouble(map,"price","没有定义报酬","错误的price");
 
         logger.debug("Util调用:***评价的格式正确***");
     }

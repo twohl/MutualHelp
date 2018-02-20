@@ -3,5 +3,35 @@
         PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
         "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 <mapper namespace="com.script.mapper.ShareMapper">
+    <resultMap id="Share" type="com.script.entity.Share">
+        <id property="id" column="id"/>
+        <result property="title" column="title"/>
+        <result column="lng" property="lng"/>
+        <result column="lat" property="lat"/>
+        <result column="date" property="date"/>
+        <result column="content" property="content"/>
+        <association property="user" column="user_id" select="selectUserById"/>
+    </resultMap>
 
+    <select id="selectUserById" parameterType="java.util.Map" resultType="com.script.entity.User">
+        SELECT * FROM user WHERE id = #{user_id}
+    </select>
+
+    <insert id="addShare" parameterType="java.util.Map" useGeneratedKeys="true">
+        INSERT INTO
+        share(title, lng, lat, date, content, user_id)
+        VALUES (#{title},#{lng},#{lat},#{date},#{content},#{user_id});
+    </insert>
+
+
+    <select id="selectShareByPosition" parameterType="java.util.Map" resultType="com.script.entity.Share">
+        SELECT *
+        from share
+        where (lng BETWEEN #{lng_min} AND #{lng_max})
+        AND (lat BETWEEN #{lat_min} AND #{lat_max})
+    </select>
+
+    <select id="selectShareById" parameterType="java.util.Map" resultMap="Share">
+        SELECT * FROM share WHERE id = #{share_id}
+    </select>
 </mapper>

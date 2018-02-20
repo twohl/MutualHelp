@@ -12,8 +12,6 @@ import org.springframework.web.bind.annotation.ResponseBody;
 @ResponseBody
 public class ExceptionHandle {
 
-    private static final Logger logger = Logger.getLogger(ExceptionHandle.class);
-
     @ExceptionHandler({Exception.class})
     public Result unknowException(Exception e){
          DefaultException defaultException =
@@ -26,7 +24,6 @@ public class ExceptionHandle {
     @ExceptionHandler({DefaultException.class})
     public Result returnException(DefaultException e){
 
-        logger.debug("throw Exception:"+e.getMessage());
         Result result = new Result(e.getErrorCode(),e.getMessage(),null);
 
         return result;

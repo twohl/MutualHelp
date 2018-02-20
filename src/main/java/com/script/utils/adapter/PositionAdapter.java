@@ -14,9 +14,7 @@ public class PositionAdapter {
 
         logger.debug("Adapter调用:***将位置点信息映射为范围位置信息***");
 
-        double dis = 500.00/111000.00;
-
-        Map newMap = new HashMap();
+        double dis = 800.00/111000.00;
 
         Double lng = Double.parseDouble((String) map.get("lng"));
 
@@ -27,14 +25,14 @@ public class PositionAdapter {
         double lat_min = lat - dis;
         double lat_max = lat + dis;
 
-        newMap.put("lng_min",lng_min);
-        newMap.put("lng_max",lng_max);
-        newMap.put("lat_min",lat_min);
-        newMap.put("lat_max",lat_max);
+        map.put("lng_min",lng_min);
+        map.put("lng_max",lng_max);
+        map.put("lat_min",lat_min);
+        map.put("lat_max",lat_max);
 
         logger.debug("Adapter调用:***映射成功***");
 
-        return newMap;
+        return map;
 
     }
 }

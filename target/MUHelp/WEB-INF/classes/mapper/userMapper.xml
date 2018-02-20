@@ -17,6 +17,8 @@
         <id column="id" property="id"/>
         <result column="nickname" property="nickname"/>
         <result column="gender" property="gender"/>
+        <result column="lng" property="lng"/>
+        <result column="lat" property="lat"/>
         <association property="userInfo" column="user_ex_id" select="selectUserInfoById"/>
     </resultMap>
 
@@ -55,7 +57,7 @@
 
     <update id="updateUser" parameterType="java.util.Map">
         UPDATE user
-        SET  lng = #{lng},lat = {lat},gender = #{gender},nickname = #{nickname}
+        SET  lng = #{lng},lat = #{lat},gender = #{gender},nickname = #{nickname}
         WHERE id = #{user_id}
     </update>
 

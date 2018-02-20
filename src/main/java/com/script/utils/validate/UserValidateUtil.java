@@ -14,16 +14,6 @@ public class UserValidateUtil {
 
     private final static Logger logger = Logger.getLogger(UserValidateUtil.class);
 
-    public static void validatePositionFormat(Map map){
-        logger.debug("Util调用:***验证位置信息格式***");
-
-        validateDouble(map,"lng","未获取到位置信息","错误的位置信息");
-
-        validateDouble(map,"lat","未获取到位置信息","错误的位置信息");
-
-        logger.debug("Util调用:***位置信息验证成功***");
-    }
-
 
     public static void validateRegistFormat(Map map){
         logger.debug("Util调用:***验证注册格式***");
@@ -60,16 +50,6 @@ public class UserValidateUtil {
             throw new DefaultException(ResultCode.NORIGHTDATA_EXCEPTION,"用户名或密码错误");
         }
         logger.debug("Util调用:***用户名密码验证成功***");
-    }
-
-
-    public static void validateGetDate(Object obj){
-
-        logger.debug("Util调用:***验证是否取得数据***");
-        if(obj == null){
-            throw new DefaultException(ResultCode.NODATAINDB_EXCEPTION,"取得数据为空");
-        }
-        logger.debug("Util调用:***成功取得数据***");
     }
 
     public static void validateUpdateUserInfo(Map map){

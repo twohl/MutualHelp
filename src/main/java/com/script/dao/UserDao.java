@@ -28,7 +28,6 @@ public class UserDao {
     @Autowired
     private LoginMapper loginMapper;
 
-    @Transactional
     public Login login(Map map){
 
         logger.debug("DAO层调用:***获取login表中信息***");
@@ -47,9 +46,8 @@ public class UserDao {
 
     }
 
-    @Transactional
-    public void regist(Map map){
 
+    public void regist(Map map){
         logger.debug("DAO层调用:***向user,user_extend表中增加一条数据，添加新用户***");
 
         validateUsername(map);           //验证用户名是否可注册
@@ -76,7 +74,7 @@ public class UserDao {
 
     }
 
-    @Transactional
+
     public void editUserinfo(Map map){
         logger.debug("DAO层调用:***更新login user user_extend 表中的信息***");
 
@@ -107,7 +105,6 @@ public class UserDao {
         return login;
     }
 
-    @Transactional
     public Map validateUsername(Map map){
         Login login = loginMapper.selectLogin(map);
 

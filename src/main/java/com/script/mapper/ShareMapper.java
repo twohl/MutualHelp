@@ -2,14 +2,15 @@ package com.script.mapper;
 
 import com.script.entity.Share;
 
+import java.util.List;
+import java.util.Map;
+
 public interface ShareMapper {
 
-    void addShare(Share share);
+    void addShare(Map map);
 
-    void delShareById(int id);
+    List selectShareByPosition(Map map);
 
-    Share[] selectAllShare();
-
-    Share[] selectShareByUser(int user_id);
+    Share selectShareById(Map map);
 
 }
