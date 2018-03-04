@@ -61,6 +61,18 @@ public class ChatServices {
         return list;
     }
 
+    public int va_getChatCountWithUser(Map map){
+
+        logger.debug("services层调用:***获取一组聊天新信息***");
+
+        validateGetChat(map);
+
+        int count = dao.getChatCountWithUser(map);
+
+        logger.debug("services层调用:***获取新信息成功***");
+        return count;
+    }
+
     public List va_getChatNearBy(Map map){
         logger.debug("services层调用:***获取聊天室聊天***");
 
@@ -89,8 +101,10 @@ public class ChatServices {
 
     public ChatId va_getChatId(Map map){
         logger.debug("controller层调用:***获取一组聊天***");
-
-        map = addParam.addChatIdParam(map);
+        try {
+            va_createChatId(map);
+        }catch (Exception e){
+        }
 
         validateGetChatId(map);
 

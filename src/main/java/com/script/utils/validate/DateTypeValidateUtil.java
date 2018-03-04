@@ -16,14 +16,14 @@ public class DateTypeValidateUtil {
     }
 
     public static void validateString(Map map, String name,String errorMessage){
-        String var1 = (String) map.get(name);
+        String var1 = String.valueOf(map.get(name));
         if(var1 == null || "".equals(var1)){
             throw new DefaultException(ResultCode.ERROR_DATA_NULL,errorMessage);
         }
     }
 
     public static void validateInteger(Map map, String name,String errorMessage,String errorFormatMessage){
-        String var1 = (String) map.get(name);
+        String var1 = String.valueOf(map.get(name));
         if(var1 == null || "".equals(var1)){
             throw new DefaultException(ResultCode.ERROR_DATA_NULL,errorMessage);
         }
@@ -42,7 +42,7 @@ public class DateTypeValidateUtil {
     }
 
     public static void validateDouble(Map map, String name,String errorMessage,String errorFormatMessage){
-        String var1 = (String) map.get(name);
+        String var1 = String.valueOf(map.get(name));
         if(var1 == null || "".equals(var1)){
             throw new DefaultException(ResultCode.ERROR_DATA_NULL,errorMessage);
         }
@@ -54,7 +54,7 @@ public class DateTypeValidateUtil {
     }
 
     public static void validateDate(Map map, String name,String errorMessage,String errorFormatMessage){
-        String var1 = (String) map.get(name);
+        String var1 = String.valueOf(map.get(name));
         if(var1 == null || "".equals(var1)){
             throw new DefaultException(ResultCode.ERROR_DATA_NULL,errorMessage);
         }

@@ -32,7 +32,7 @@ public class NWValidateUtil {
 
         validatePosition(map);
 
-        validateDouble(map,"price","没有定义报酬","错误的price");
+        validateString(map,"price","没有定义报酬");
 
         logger.debug("Util调用:***NW发布格式正确***");
 

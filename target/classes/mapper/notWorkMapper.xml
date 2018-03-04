@@ -29,8 +29,8 @@
 
     <insert id="addNotWork" parameterType="java.util.Map" useGeneratedKeys="true">
         insert into
-        notwork(name,content,lng,lat,organiser,organtime)
-        VALUES (#{name},#{content},#{lng},#{lat},#{organiser},#{organtime})
+        notwork(name,content,lng,lat,price,organiser,organtime)
+        VALUES (#{name},#{content},#{lng},#{lat},#{price},#{organiser},#{organtime})
     </insert>
 
     <update id="updateNoteWork" parameterType="java.util.Map">
@@ -56,10 +56,17 @@
         WHERE id = #{nw_id}
     </select>
 
+    <select id="selectNotWorkByUser" parameterType="java.util.Map" resultMap="NotWork">
+        SELECT *
+        FROM notwork
+        WHERE state !=2 AND (organiser = #{user_id} OR accepter = #{user_id})
+    </select>
+
     <select id="selectNotWorkByPosition" parameterType="java.util.Map" resultMap="NotWork">
         SELECT *
         FROM notwork
          where (lng BETWEEN #{lng_min} AND #{lng_max})
          AND (lat BETWEEN #{lat_min} AND #{lat_max})
+         AND state = 0 ORDER BY organtime DESC
     </select>
 </mapper>

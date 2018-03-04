@@ -14,7 +14,7 @@ public class NotWork implements Serializable {
     private double lat;
     private Date organtime;
     private Date  acctime;
-    private double price;
+    private String price;
     private int state;
 
     public int getId() {
@@ -89,11 +89,11 @@ public class NotWork implements Serializable {
         this.acctime = acctime;
     }
 
-    public double getPrice() {
+    public String getPrice() {
         return price;
     }
 
-    public void setPrice(double price) {
+    public void setPrice(String price) {
         this.price = price;
     }
 

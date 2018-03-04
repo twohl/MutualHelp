@@ -2,6 +2,7 @@ package com.script.controller;
 
 import com.script.myEnum.ResultCode;
 import com.script.services.UploadAndDownloadServices;
+import com.script.utils.adapter.JsonImageAdapter;
 import com.script.utils.resultType.Result;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
@@ -9,6 +10,7 @@ import org.springframework.web.multipart.MultipartFile;
 
 import javax.servlet.http.HttpServletRequest;
 
+import java.util.HashMap;
 import java.util.Map;
 
 @RestController
@@ -17,42 +19,24 @@ public class UpLoadAndDownLoadController {
     @Autowired
     UploadAndDownloadServices services;
 
-    @RequestMapping(value = "/upload/icon",method = RequestMethod.POST)
-    public Result uploadIcon(HttpServletRequest request,
-                             @RequestParam("icon")MultipartFile file,
-                             @RequestParam("username")String username){
+    @RequestMapping(value = "/getIcon/{user_id}",method = RequestMethod.POST)
+    public Result getIcon(HttpServletRequest request,@PathVariable int user_id){
 
-        services.uploadIcon(request,file,username);
-        Result result = new Result(ResultCode.UPLOAD_SUCCESS,"文件上传成功",null);
+        byte[] icon = services.getIcon(request,user_id);
 
-        return result;
-    }
-    @RequestMapping(value = "/upload/imag",method = RequestMethod.POST)
-    public Result uploadImage(HttpServletRequest request,
-                              @RequestParam("image") MultipartFile file,
-                              @RequestParam("shareId") int shareId){
-        services.uploadImage(request,file,shareId);
+        String data = icon == null ?null:JsonImageAdapter.getString(icon);
 
-        Result result = new Result(ResultCode.UPLOAD_SUCCESS,"文件上传成功",null);
-
+        Result result = new Result(ResultCode.GETDATA_SUCCESS,"头像获取成功",data);
         return result;
     }
 
-    @RequestMapping(value = "/getIcon",method = RequestMethod.POST)
-    public Result getIcon(HttpServletRequest request,@RequestBody Map map){
+    @RequestMapping(value = "/getImage/{share_id}",method = RequestMethod.POST)
+    public Result getImage(HttpServletRequest request,@PathVariable int share_id){
 
-        byte[] icon = services.va_getIcon(request,map);
+        byte[]image = services.getImage(request,share_id);
 
-        Result result = new Result(ResultCode.GETDATA_SUCCESS,"头像获取成功",icon);
-        return result;
-    }
-
-    @RequestMapping(value = "/getImage",method = RequestMethod.POST)
-    public Result getImage(HttpServletRequest request,@RequestBody Map map){
-
-        byte[]image = services.va_getImage(request,map);
-
-        Result result = new Result(ResultCode.GETDATA_SUCCESS,"图片获取成功",image);
+        String data = image == null ?null:JsonImageAdapter.getString(image);
+        Result result = new Result(ResultCode.GETDATA_SUCCESS,"图片获取成功",data);
         return result;
     }
 }

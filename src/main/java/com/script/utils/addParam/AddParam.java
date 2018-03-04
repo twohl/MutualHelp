@@ -46,6 +46,18 @@ public class AddParam {
         return map;
     }
 
+    public Map addUpPos(Map map){
+        logger.debug("Util层调用:***添加更新位置的必须信息***");
+
+        Login login = userDao.getLoginByUserName(map);
+
+        validateGetDate(login);
+
+        int user_id = login.getUser().getId();
+        map.put("user_id",user_id+"");
+        return map;
+    }
+
     public  Map addEditParam(Map map){
         logger.debug("Util层调用:***添加修改用户的必须信息***");
 

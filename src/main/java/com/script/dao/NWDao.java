@@ -68,6 +68,16 @@ public class NWDao {
         logger.debug("DAO层调用:***更新nw表信息成功***");
     }
 
+    @Transactional
+    public List<NotWork> selectNotWorkByUser(Map map){
+        logger.debug("DAO层调用:***查找nw表中信息***");
+
+        List list = notWorkMapper.selectNotWorkByUser(map);
+
+        logger.debug("DAO层调用:***查找nw表中信息成功***");
+        return list;
+
+    }
 
     @Transactional
     public void cancleNW(Map map){
@@ -75,9 +85,20 @@ public class NWDao {
 
         map.put("state",2);
 
-        validateCancleFormat(map);
-
         validateNWCanCancle(map);
+
+        notWorkMapper.updateNoteWork(map);
+
+        logger.debug("DAO层调用:***notWork表更新成功***");
+    }
+
+    @Transactional
+    public void compliteNW(Map map){
+        logger.debug("DAO层调用:***更新notWork表的状态等信息***");
+
+        map.put("state",3);
+
+        validateNWCanComplite(map);
 
         notWorkMapper.updateNoteWork(map);
 
@@ -121,9 +142,20 @@ public class NWDao {
 
         NotWork notWork = notWorkMapper.selectNotWorkById(map);
 
-        if(notWork.getOrganiser().getId() ==
+        if(notWork.getOrganiser().getId() !=
                 Integer.parseInt((String)map.get("user_id"))){
-            throw new DefaultException(ResultCode.PURVIEW_CER_EXCEPTION,"你没有权限这样做");
+            throw new DefaultException(ResultCode.NW_PURVIEW_CER_EXCEPTION,"你没有权限这样做");
         }
     }
+
+    public  void validateNWCanComplite(Map map){
+
+        NotWork notWork = notWorkMapper.selectNotWorkById(map);
+
+        if(notWork.getAccepter().getId() !=
+                Integer.parseInt((String)map.get("user_id"))){
+            throw new DefaultException(ResultCode.NW_PURVIEW_CER_EXCEPTION,"这不是您接取的NotWork");
+        }
+    }
+
 }

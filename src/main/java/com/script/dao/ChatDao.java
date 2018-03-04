@@ -11,6 +11,8 @@ import com.script.utils.resultType.Result;
 import org.apache.log4j.Logger;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Repository;
+import org.springframework.transaction.annotation.Isolation;
+import org.springframework.transaction.annotation.Transactional;
 
 import java.util.List;
 import java.util.Map;
@@ -56,6 +58,15 @@ public class ChatDao {
         return list;
     }
 
+    public int getChatCountWithUser(Map map){
+        logger.debug("DAO层调用:***查找Chat表中数据***");
+
+        int count = chatMapper.selectChatCountAfterDate(map);
+
+        logger.debug("DAO层调用:***查找成功***");
+        return count;
+    }
+
     public List getChatNearBy(Map map){
         logger.debug("DAO层调用:***查找ChatRoom表中数据***");
 
@@ -64,6 +75,7 @@ public class ChatDao {
         logger.debug("DAO层调用:***查找成功***");
         return list;
     }
+    @Transactional
     public ChatId getChatId(Map map){
         logger.debug("DAO层调用:***查找ChatId表中数据***");
 
@@ -73,6 +85,7 @@ public class ChatDao {
         return  chatId;
     }
 
+    @Transactional
     public void createChatId(Map map){
         logger.debug("DAO层调用:***向ChatId表中添加一条数据***");
 

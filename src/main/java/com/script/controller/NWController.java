@@ -6,10 +6,7 @@ import com.script.services.NWServices;
 import com.script.utils.resultType.Result;
 import org.apache.log4j.Logger;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.web.bind.annotation.RequestBody;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestMethod;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 import java.util.Map;
@@ -61,6 +58,19 @@ public class NWController {
         return result;
     }
 
+    @RequestMapping(value = "/complite",method = RequestMethod.POST)
+    public Result compliteNW(@RequestBody Map map){
+
+        logger.debug("controller层调用:***完成notWork***");
+
+        services.va_compliteNW(map);
+
+        logger.debug("controller层调用:***成功完成notWork***");
+
+        Result result = new Result(ResultCode.NWCANCLE_SUCCESS,"完成NotWork",null);
+        return result;
+    }
+
     @RequestMapping(value = "/evaluate")
     public Result evaluateNW(@RequestBody Map map){
 
@@ -102,6 +112,18 @@ public class NWController {
         logger.debug("controller层调用:***nw信息修改成功***");
 
         Result result = new Result(ResultCode.DATAUPDATE_SUCCESS,"信息修改成功",null);
+
+        return result;
+    }
+    @RequestMapping(value = "/getUserNW",method = RequestMethod.POST)
+    public Result getUserNW(@RequestBody Map map){
+        logger.debug("controller层调用:***拉取nw信息***");
+
+        List list = services.va_getUserNW(map);
+
+        logger.debug("controller层调用:***nw信息拉取成功***");
+
+        Result result = new Result(ResultCode.GETDATA_SUCCESS,"拉取信息成功",list);
 
         return result;
     }

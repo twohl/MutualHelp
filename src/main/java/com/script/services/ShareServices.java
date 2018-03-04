@@ -7,6 +7,7 @@ import org.apache.log4j.Logger;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import javax.servlet.http.HttpServletRequest;
 import java.util.List;
 import java.util.Map;
 
@@ -29,14 +30,14 @@ public class ShareServices {
     private ShareDao dao;
 
 
-    public void shareNearBy(Map map){
+    public void shareNearBy(HttpServletRequest request,Map map){
         logger.debug("services层调用:***分享周边***");
 
         validateShare(map);             //验证传入参数的正确性
 
         map = addParam.addShareParam(map);
 
-        dao.shareNearBy(map);
+        dao.shareNearBy(request,map);
 
         logger.debug("services层调用:***分享成功***");
     }

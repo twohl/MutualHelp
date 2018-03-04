@@ -12,6 +12,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RestController;
 
+import javax.servlet.http.HttpServletRequest;
 import java.util.List;
 import java.util.Map;
 
@@ -26,11 +27,11 @@ public class ShareController {
 
 
     @RequestMapping(value = "/write",method = RequestMethod.PUT)
-    public Result shareNearBy(@RequestBody Map map){
+    public Result shareNearBy(HttpServletRequest request,@RequestBody Map map){
 
         logger.debug("controller层调用:***分享周边***");
 
-        services.shareNearBy(map);
+         services.shareNearBy(request,map);
 
         Result result = new Result(ResultCode.SHARE_SUCCESS,"分享成功",null);
         logger.debug("controller层调用:***分享成功***");

@@ -22,14 +22,19 @@
         user)
         VALUES (#{chat_id},#{date},#{content},#{user_id})
     </insert>
-    <delete id="delChatBeforeDate" parameterType="java.util.Map">
+    <delete id="clear">
         DELETE FROM chat_extend
-        WHERE <![CDATA[ date <= #{date} ]]>
     </delete>
+
+    <select id="selectChatCountAfterDate" resultType="int" parameterType="java.util.Map">
+        select count(*)
+        from chat_extend
+        WHERE <![CDATA[ date > #{date} ]]> AND chat_id =#{chat_id} ORDER BY date asc
+    </select>
 
     <select id="selectChatAfterDate" resultMap="Chat" parameterType="java.util.Map">
         select *
         from chat_extend
-        WHERE <![CDATA[ date >= #{date} ]]> AND chat_id =#{chat_id}
+        WHERE <![CDATA[ date > #{date} ]]> AND chat_id =#{chat_id} ORDER BY date asc
     </select>
 </mapper>

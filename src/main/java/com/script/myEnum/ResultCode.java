@@ -43,6 +43,8 @@ public enum ResultCode {
     UPLOAD_FAILD(404),                      //上传失败
 
     PURVIEW_CER_EXCEPTION(500),             //权限验证异常
+    NW_PURVIEW_CER_EXCEPTION(501),          //notWork权限验证异常
+
 
 
 

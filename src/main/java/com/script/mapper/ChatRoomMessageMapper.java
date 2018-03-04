@@ -12,4 +12,6 @@ public interface ChatRoomMessageMapper {
     void delChatRoomMessageBeforeDate(Map map);
 
     List selectChatRoomMessageAfterDate(Map map);
+
+    void clear();
 }

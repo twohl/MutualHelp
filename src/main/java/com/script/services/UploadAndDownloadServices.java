@@ -14,15 +14,22 @@ import java.util.Map;
 @Service
 public class UploadAndDownloadServices {
 
-    public void uploadIcon(HttpServletRequest request, MultipartFile file, String username){
+    public void va_uploadIcon(Map map){
+
+        HttpServletRequest request = (HttpServletRequest) map.get("request");
+        MultipartFile file = (MultipartFile) map.get("file");
+        String user_id = (String) map.get("user_id");
 
         String path = request.getServletContext().getRealPath("/icons/");
         if(!file.isEmpty()){
-            String filename = username+"_icon";
+            String filename = user_id+"_icon";
             File filePath = new File(path,filename);
 
             if(!filePath.getParentFile().exists()){
                 filePath.getParentFile().mkdirs();
+            }
+            if(filePath.exists()){
+                filePath.delete();
             }
             try {
                 file.transferTo(new File(path+File.separator+filename));
@@ -32,7 +39,11 @@ public class UploadAndDownloadServices {
         }
     }
 
-    public void uploadImage(HttpServletRequest request, MultipartFile file, int shareId) {
+    public void va_uploadImage(Map map) {
+
+        HttpServletRequest request = (HttpServletRequest) map.get("request");
+        MultipartFile file = (MultipartFile) map.get("file");
+        String shareId = (String) map.get("shareId");
 
         String path = request.getServletContext().getRealPath("/images/");
         if (!file.isEmpty()) {
@@ -42,6 +53,9 @@ public class UploadAndDownloadServices {
             if (!filePath.getParentFile().exists()) {
                 filePath.getParentFile().mkdirs();
             }
+            if(filePath.exists()){
+                filePath.delete();
+            }
             try {
                 file.transferTo(new File(path + File.separator + filename));
             } catch (IOException e) {
@@ -49,12 +63,15 @@ public class UploadAndDownloadServices {
             }
         }
     }
-    public byte[] va_getIcon(HttpServletRequest request,Map map){
+    public byte[] getIcon(HttpServletRequest request,int user_id){
 
 
         String path = request.getServletContext().getRealPath("/icons/");
-        String filename = map.get("username")+"_icon";
+        String filename = user_id+"_icon";
         File file = new File(path,filename);
+        if(!file.exists()){
+            return null;
+        }
         byte[] icon;
         try {
              FileInputStream in = new FileInputStream(file);
@@ -73,10 +90,13 @@ public class UploadAndDownloadServices {
         return icon;
     }
 
-    public byte[] va_getImage(HttpServletRequest request,Map map){
+    public byte[] getImage(HttpServletRequest request,int share_id){
         String path = request.getServletContext().getRealPath("/images/");
-        String filename = map.get("sharId")+"_image";
+        String filename = share_id+"_image";
         File file = new File(path,filename);
+        if(!file.exists()){
+            return null;
+        }
         byte[] image;
         try {
             FileInputStream in = new FileInputStream(file);

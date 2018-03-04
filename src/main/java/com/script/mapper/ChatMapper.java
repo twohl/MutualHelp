@@ -16,5 +16,9 @@ public interface ChatMapper {
 
     void delChatBeforeDate(Map map);
 
+    int selectChatCountAfterDate(Map map);
+
+    void clear();
+
 
 }

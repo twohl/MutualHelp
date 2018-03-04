@@ -75,6 +75,20 @@ public class NWServices {
         logger.debug("services层调用:***取消notWork成功***");
     }
 
+    public void va_compliteNW(Map map){
+        logger.debug("services层调用:***完成notwork***");
+
+        validateCancleFormat(map);          //验证取消nw格式
+
+        Login login = userDao.getLoginByUserName(map);
+
+        map.put("user_id",login.getUser().getId()+"");
+
+        dao.compliteNW(map);
+
+        logger.debug("services层调用:***完成notWork成功***");
+    }
+
     public void va_evaluateNW(Map map){
         logger.debug("services层调用:***评价notwork***");
 
@@ -109,6 +123,18 @@ public class NWServices {
         validateGetDate(notWork);
         logger.debug("services层调用:***获取nw信息成功***");
         return notWork;
+    }
+
+    public List va_getUserNW(Map map){
+        logger.debug("serveices层调用:***获取nw信息***");
+
+        addParam.addUpPos(map);
+
+        List list = dao.selectNotWorkByUser(map);
+
+        logger.debug("services层调用:***获取nw信息成功***");
+
+        return list;
     }
 
     public void va_editNW(Map map){

@@ -5,12 +5,12 @@ import com.script.myEnum.ResultCode;
 public class Result {
     private ResultCode code;
     private String message;
-    private Object date;
+    private Object data;
 
-    public Result(ResultCode code, String message, Object date) {
+    public Result(ResultCode code, String message, Object data) {
         this.code = code;
         this.message = message;
-        this.date = date;
+        this.data = data;
     }
 
     public ResultCode getCode() {
@@ -29,11 +29,11 @@ public class Result {
         this.message = message;
     }
 
-    public Object getDate() {
-        return date;
+    public Object getData() {
+        return data;
     }
 
-    public void setDate(Object date) {
-        this.date = date;
+    public void setData(Object data) {
+        this.data = data;
     }
 }

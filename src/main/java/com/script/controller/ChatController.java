@@ -62,6 +62,9 @@ public class ChatController {
         logger.debug("controller层调用:***获取一组聊天***");
 
         ChatId chatId = services.va_getChatId(map);
+        map.put("chat_id",chatId.getId()+"");
+        int count = services.va_getChatCountWithUser(map);
+        chatId.setCount(count);
         Result result = new Result(ResultCode.GETDATA_SUCCESS,"获取消息成功",chatId);
         logger.debug("controller层调用:***获取成功***");
 

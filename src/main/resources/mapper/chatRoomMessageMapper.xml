@@ -3,11 +3,9 @@
         PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
         "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 <mapper namespace="com.script.mapper.ChatRoomMessageMapper">
-    <resultMap id="ChatRoom" type="com.script.entity.ChatRoomMessage">
+    <resultMap id="ChatRoom" type="com.script.entity.Chat">
         <result column="date" property="date"/>
         <result column="content" property="content"/>
-        <result column="lng" property="lng"/>
-        <result column="lat" property="lat"/>
         <association property="user" column="user_id" select="selectUserById"/>
     </resultMap>
 
@@ -15,6 +13,9 @@
         SELECT * FROM user WHERE id = #{user}
     </select>
 
+    <delete id="clear">
+        DELETE FROM chatroom
+    </delete>
 
     <insert id="addChatRoomMessage" parameterType="java.util.Map">
         INSERT INTO
@@ -24,9 +25,9 @@
     <select id="selectChatRoomMessageAfterDate" parameterType="java.util.Map" resultMap="ChatRoom">
         SELECT *
         FROM chatroom
-        WHERE <![CDATA[ date >= #{date} ]]> AND
+        WHERE <![CDATA[ date > #{date}  AND
         (lng BETWEEN #{lng_min} AND #{lng_max})
-         AND (lat BETWEEN #{lat_min} AND #{lat_max})
+         AND (lat BETWEEN #{lat_min} AND #{lat_max}) ORDER BY date ASC ]]>
 
     </select>
 </mapper>

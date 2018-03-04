@@ -16,9 +16,9 @@ public class PositionAdapter {
 
         double dis = 800.00/111000.00;
 
-        Double lng = Double.parseDouble((String) map.get("lng"));
+        Double lng = Double.parseDouble(String.valueOf(map.get("lng")));
 
-        Double lat = Double.parseDouble((String) map.get("lat"));
+        Double lat = Double.parseDouble(String.valueOf(map.get("lat")));
 
         double lng_min = lng - dis;
         double lng_max = lng + dis;

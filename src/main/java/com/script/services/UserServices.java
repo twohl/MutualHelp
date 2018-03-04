@@ -13,6 +13,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 
+import javax.servlet.http.HttpServletRequest;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
@@ -64,6 +65,9 @@ public class UserServices {
 
         logger.debug("services层调用:***获取用户详细信息***");
 
+        if(map.get("user_id") == null)
+            map = addParam.addUpPos(map);
+
         User user = dao.getUser(map);                            //获取用户详细信息
 
         validateGetDate(user);                                  //验证是否取得数据
@@ -73,7 +77,7 @@ public class UserServices {
         return user;
     }
 
-    public void va_editUserinfo(Map map){
+    public void va_editUserinfo(HttpServletRequest request,Map map){
         logger.debug("services层调用:***修改用户信息***");
 
         //添加传入参数缺省的必须参数
@@ -84,7 +88,7 @@ public class UserServices {
 
         validateUpdateUserInfo(map);
 
-        dao.editUserinfo(map);
+        dao.editUserinfo(request,map);
 
         logger.debug("services层调用:***修改用户信息成功***");
     }
@@ -103,6 +107,18 @@ public class UserServices {
         return list;
     }
 
+    public void va_updatePosition(Map map){
+
+        logger.debug("services层调用:***定时发送检测位置信息***");
+
+        map = addParam.addUpPos(map);
+
+        dao.updatePosition(map);
+
+        logger.debug("services层调用:***检测成功***");
+
+
+    }
 
 
 }

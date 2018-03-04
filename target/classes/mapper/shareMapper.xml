@@ -17,18 +17,18 @@
         SELECT * FROM user WHERE id = #{user_id}
     </select>
 
-    <insert id="addShare" parameterType="java.util.Map" useGeneratedKeys="true">
+    <insert id="addShare" keyProperty="share_id" parameterType="java.util.Map" useGeneratedKeys="true">
         INSERT INTO
         share(title, lng, lat, date, content, user_id)
         VALUES (#{title},#{lng},#{lat},#{date},#{content},#{user_id});
     </insert>
 
 
-    <select id="selectShareByPosition" parameterType="java.util.Map" resultType="com.script.entity.Share">
+    <select id="selectShareByPosition" parameterType="java.util.Map" resultMap="Share">
         SELECT *
         from share
         where (lng BETWEEN #{lng_min} AND #{lng_max})
-        AND (lat BETWEEN #{lat_min} AND #{lat_max})
+        AND (lat BETWEEN #{lat_min} AND #{lat_max}) ORDER BY date DESC
     </select>
 
     <select id="selectShareById" parameterType="java.util.Map" resultMap="Share">

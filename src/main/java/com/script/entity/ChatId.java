@@ -8,6 +8,7 @@ public class ChatId implements Serializable{
     private int id;
     private User user1;
     private User user2;
+    private int count;
 
     public int getId() {
         return id;
@@ -31,5 +32,13 @@ public class ChatId implements Serializable{
 
     public void setUser2(User user2) {
         this.user2 = user2;
+    }
+
+    public int getCount() {
+        return count;
+    }
+
+    public void setCount(int count) {
+        this.count = count;
     }
 }

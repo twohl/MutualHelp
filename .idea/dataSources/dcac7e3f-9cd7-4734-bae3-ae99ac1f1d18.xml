@@ -1200,186 +1200,192 @@
       <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="288" parent="236" name="accepter">
+    <column id="288" parent="236" name="price">
       <Position>6</Position>
+      <DataType>double|0</DataType>
+      <NotNull>1</NotNull>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="289" parent="236" name="accepter">
+      <Position>7</Position>
       <DataType>int(11)|0</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="289" parent="236" name="state">
-      <Position>7</Position>
+    <column id="290" parent="236" name="state">
+      <Position>8</Position>
       <DataType>int(11)|0</DataType>
       <NotNull>1</NotNull>
       <DefaultExpression>&apos;0&apos;</DefaultExpression>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="290" parent="236" name="organiser">
-      <Position>8</Position>
+    <column id="291" parent="236" name="organiser">
+      <Position>9</Position>
       <DataType>int(11)|0</DataType>
       <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="291" parent="236" name="organtime">
-      <Position>9</Position>
+    <column id="292" parent="236" name="organtime">
+      <Position>10</Position>
       <DataType>datetime|0</DataType>
       <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="292" parent="236" name="acctime">
-      <Position>10</Position>
+    <column id="293" parent="236" name="acctime">
+      <Position>11</Position>
       <DataType>datetime|0</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <index id="293" parent="236" name="FK_notwork_user_2">
+    <index id="294" parent="236" name="FK_notwork_user_2">
       <ColNames>accepter</ColNames>
     </index>
-    <index id="294" parent="236" name="FK_notwork_user">
+    <index id="295" parent="236" name="FK_notwork_user">
       <ColNames>organiser</ColNames>
     </index>
-    <key id="295" parent="236" name="PRIMARY">
+    <key id="296" parent="236" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
       <ColNames>id</ColNames>
       <Primary>1</Primary>
     </key>
-    <foreign-key id="296" parent="236" name="FK_notwork_user_2">
+    <foreign-key id="297" parent="236" name="FK_notwork_user_2">
       <ColNames>accepter</ColNames>
       <RefSchemaName>muhelp</RefSchemaName>
       <RefTableName>user</RefTableName>
       <RefColNames>id</RefColNames>
     </foreign-key>
-    <foreign-key id="297" parent="236" name="FK_notwork_user">
+    <foreign-key id="298" parent="236" name="FK_notwork_user">
       <ColNames>organiser</ColNames>
       <RefSchemaName>muhelp</RefSchemaName>
       <RefTableName>user</RefTableName>
       <RefColNames>id</RefColNames>
     </foreign-key>
-    <column id="298" parent="237" name="id">
+    <column id="299" parent="237" name="id">
       <Position>1</Position>
       <DataType>int(11)|0</DataType>
       <NotNull>1</NotNull>
       <SequenceIdentity>1</SequenceIdentity>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="299" parent="237" name="title">
+    <column id="300" parent="237" name="title">
       <Position>2</Position>
       <DataType>varchar(50)|0</DataType>
       <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="300" parent="237" name="lng">
+    <column id="301" parent="237" name="lng">
       <Position>3</Position>
       <DataType>double|0</DataType>
       <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="301" parent="237" name="lat">
+    <column id="302" parent="237" name="lat">
       <Position>4</Position>
       <DataType>double|0</DataType>
       <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="302" parent="237" name="date">
+    <column id="303" parent="237" name="date">
       <Position>5</Position>
       <DataType>datetime|0</DataType>
       <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="303" parent="237" name="content">
+    <column id="304" parent="237" name="content">
       <Position>6</Position>
       <DataType>varchar(50)|0</DataType>
       <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="304" parent="237" name="user_id">
+    <column id="305" parent="237" name="user_id">
       <Position>7</Position>
       <DataType>int(11)|0</DataType>
       <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <index id="305" parent="237" name="FK_share_user">
+    <index id="306" parent="237" name="FK_share_user">
       <ColNames>user_id</ColNames>
     </index>
-    <key id="306" parent="237" name="PRIMARY">
+    <key id="307" parent="237" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
       <ColNames>id</ColNames>
       <Primary>1</Primary>
     </key>
-    <foreign-key id="307" parent="237" name="FK_share_user">
+    <foreign-key id="308" parent="237" name="FK_share_user">
       <ColNames>user_id</ColNames>
       <RefSchemaName>muhelp</RefSchemaName>
       <RefTableName>user</RefTableName>
       <RefColNames>id</RefColNames>
     </foreign-key>
-    <column id="308" parent="238" name="id">
+    <column id="309" parent="238" name="id">
       <Position>1</Position>
       <DataType>int(11)|0</DataType>
       <NotNull>1</NotNull>
       <SequenceIdentity>1</SequenceIdentity>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="309" parent="238" name="nickname">
+    <column id="310" parent="238" name="nickname">
       <Position>2</Position>
       <DataType>varchar(50)|0</DataType>
       <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="310" parent="238" name="gender">
+    <column id="311" parent="238" name="gender">
       <Position>3</Position>
       <DataType>int(11)|0</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="311" parent="238" name="lng">
+    <column id="312" parent="238" name="lng">
       <Position>4</Position>
       <DataType>double|0</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="312" parent="238" name="lat">
+    <column id="313" parent="238" name="lat">
       <Position>5</Position>
       <DataType>double|0</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="313" parent="238" name="user_ex_id">
+    <column id="314" parent="238" name="user_ex_id">
       <Position>6</Position>
       <DataType>int(11)|0</DataType>
       <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <index id="314" parent="238" name="FK_user_user_extend">
+    <index id="315" parent="238" name="FK_user_user_extend">
       <ColNames>user_ex_id</ColNames>
     </index>
-    <key id="315" parent="238" name="PRIMARY">
+    <key id="316" parent="238" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
       <ColNames>id</ColNames>
       <Primary>1</Primary>
     </key>
-    <foreign-key id="316" parent="238" name="FK_user_user_extend">
+    <foreign-key id="317" parent="238" name="FK_user_user_extend">
       <ColNames>user_ex_id</ColNames>
       <RefSchemaName>muhelp</RefSchemaName>
       <RefTableName>user_extend</RefTableName>
       <RefColNames>id</RefColNames>
     </foreign-key>
-    <column id="317" parent="239" name="id">
+    <column id="318" parent="239" name="id">
       <Position>1</Position>
       <DataType>int(11)|0</DataType>
       <NotNull>1</NotNull>
       <SequenceIdentity>1</SequenceIdentity>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="318" parent="239" name="address">
+    <column id="319" parent="239" name="address">
       <Position>2</Position>
       <DataType>varchar(200)|0</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="319" parent="239" name="sign">
+    <column id="320" parent="239" name="sign">
       <Position>3</Position>
       <DataType>varchar(100)|0</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="320" parent="239" name="hobby">
+    <column id="321" parent="239" name="hobby">
       <Position>4</Position>
       <DataType>varchar(100)|0</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <key id="321" parent="239" name="PRIMARY">
+    <key id="322" parent="239" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
       <ColNames>id</ColNames>
       <Primary>1</Primary>

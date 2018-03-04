@@ -12,15 +12,15 @@ import org.springframework.web.bind.annotation.ResponseBody;
 @ResponseBody
 public class ExceptionHandle {
 
-    @ExceptionHandler({Exception.class})
-    public Result unknowException(Exception e){
-         DefaultException defaultException =
-                 new DefaultException(ResultCode.UNKNOW_EXCEPTION,"未知错误");
-         Result result = new Result(defaultException.getErrorCode(),
-                 defaultException.getMessage(),
-                 null);
-         return result;
-    }
+//    @ExceptionHandler({Exception.class})
+//    public Result unknowException(Exception e){
+//         DefaultException defaultException =
+//                 new DefaultException(ResultCode.UNKNOW_EXCEPTION,"未知错误");
+//         Result result = new Result(defaultException.getErrorCode(),
+//                 defaultException.getMessage(),
+//                 null);
+//         return result;
+//    }
     @ExceptionHandler({DefaultException.class})
     public Result returnException(DefaultException e){
 

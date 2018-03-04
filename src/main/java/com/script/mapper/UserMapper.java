@@ -18,4 +18,8 @@ public interface UserMapper {
     List<User> selectUserByPosition(Map map);
 
     User selectUserById(Map map);
+
+    void cleanUser();
+
+    void updatePosition(Map map);
 }

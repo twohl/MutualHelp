@@ -14,4 +14,6 @@ public interface NotWorkMapper {
     List selectNotWorkByPosition(Map map);
 
     NotWork selectNotWorkById(Map map);
+
+    List selectNotWorkByUser(Map map);
 }

@@ -8,6 +8,7 @@ import org.apache.log4j.Logger;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
+import javax.servlet.http.HttpServletRequest;
 import java.util.List;
 import java.util.Map;
 
@@ -63,14 +64,27 @@ public class UserController {
     }
 
     @RequestMapping(value = "/edit",method = RequestMethod.POST)
-    public Result EditUserInfo(@RequestBody Map map){
+    public Result EditUserInfo(HttpServletRequest request,@RequestBody Map map){
 
         logger.debug("controller层调用:***修改用户个人信息***");
 
-        services.va_editUserinfo(map);
+        services.va_editUserinfo(request,map);
 
         Result result = new Result(ResultCode.DATAUPDATE_SUCCESS,"用户信息修改成功",null);
         logger.debug("controller层调用:***用户个人信息修改成功***");
+
+        return result;
+    }
+
+    @RequestMapping(value = "/keep",method = RequestMethod.POST)
+    public Result updatePosition(@RequestBody Map map){
+        logger.debug("controller层调用:***定时发送检测位置信息***");
+
+        services.va_updatePosition(map);
+
+        Result result = new Result(ResultCode.DATAUPDATE_SUCCESS,"成功更新信息",null);
+
+        logger.debug("controller层调用:***检测成功***");
 
         return result;
     }
