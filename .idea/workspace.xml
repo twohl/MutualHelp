@@ -7,89 +7,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="71cea34a-9938-44f5-b3e6-a10219c27d21" name="Default" comment="aaa">
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/script/task/UpdateDB.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/script/utils/adapter/JsonImageAdapter.java" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/dcac7e3f-9cd7-4734-bae3-ae99ac1f1d18.xml" afterPath="$PROJECT_DIR$/.idea/dataSources/dcac7e3f-9cd7-4734-bae3-ae99ac1f1d18.xml" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/script/aop/PurviewCertification.java" afterPath="$PROJECT_DIR$/src/main/java/com/script/aop/PurviewCertification.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/script/controller/ChatController.java" afterPath="$PROJECT_DIR$/src/main/java/com/script/controller/ChatController.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/script/controller/NWController.java" afterPath="$PROJECT_DIR$/src/main/java/com/script/controller/NWController.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/script/controller/ShareController.java" afterPath="$PROJECT_DIR$/src/main/java/com/script/controller/ShareController.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/script/controller/UpLoadAndDownLoadController.java" afterPath="$PROJECT_DIR$/src/main/java/com/script/controller/UpLoadAndDownLoadController.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/script/controller/UserController.java" afterPath="$PROJECT_DIR$/src/main/java/com/script/controller/UserController.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/script/dao/ChatDao.java" afterPath="$PROJECT_DIR$/src/main/java/com/script/dao/ChatDao.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/script/dao/NWDao.java" afterPath="$PROJECT_DIR$/src/main/java/com/script/dao/NWDao.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/script/dao/ShareDao.java" afterPath="$PROJECT_DIR$/src/main/java/com/script/dao/ShareDao.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/script/dao/UserDao.java" afterPath="$PROJECT_DIR$/src/main/java/com/script/dao/UserDao.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/script/entity/ChatId.java" afterPath="$PROJECT_DIR$/src/main/java/com/script/entity/ChatId.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/script/entity/NotWork.java" afterPath="$PROJECT_DIR$/src/main/java/com/script/entity/NotWork.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/script/mapper/ChatMapper.java" afterPath="$PROJECT_DIR$/src/main/java/com/script/mapper/ChatMapper.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/script/mapper/ChatRoomMessageMapper.java" afterPath="$PROJECT_DIR$/src/main/java/com/script/mapper/ChatRoomMessageMapper.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/script/mapper/NotWorkMapper.java" afterPath="$PROJECT_DIR$/src/main/java/com/script/mapper/NotWorkMapper.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/script/mapper/UserMapper.java" afterPath="$PROJECT_DIR$/src/main/java/com/script/mapper/UserMapper.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/script/myEnum/ResultCode.java" afterPath="$PROJECT_DIR$/src/main/java/com/script/myEnum/ResultCode.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/script/myException/ExceptionHandle.java" afterPath="$PROJECT_DIR$/src/main/java/com/script/myException/ExceptionHandle.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/script/services/ChatServices.java" afterPath="$PROJECT_DIR$/src/main/java/com/script/services/ChatServices.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/script/services/NWServices.java" afterPath="$PROJECT_DIR$/src/main/java/com/script/services/NWServices.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/script/services/ShareServices.java" afterPath="$PROJECT_DIR$/src/main/java/com/script/services/ShareServices.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/script/services/UploadAndDownloadServices.java" afterPath="$PROJECT_DIR$/src/main/java/com/script/services/UploadAndDownloadServices.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/script/services/UserServices.java" afterPath="$PROJECT_DIR$/src/main/java/com/script/services/UserServices.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/script/utils/adapter/PositionAdapter.java" afterPath="$PROJECT_DIR$/src/main/java/com/script/utils/adapter/PositionAdapter.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/script/utils/addParam/AddParam.java" afterPath="$PROJECT_DIR$/src/main/java/com/script/utils/addParam/AddParam.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/script/utils/resultType/Result.java" afterPath="$PROJECT_DIR$/src/main/java/com/script/utils/resultType/Result.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/script/utils/validate/DateTypeValidateUtil.java" afterPath="$PROJECT_DIR$/src/main/java/com/script/utils/validate/DateTypeValidateUtil.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/script/utils/validate/NWValidateUtil.java" afterPath="$PROJECT_DIR$/src/main/java/com/script/utils/validate/NWValidateUtil.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/mapper/chatMapper.xml" afterPath="$PROJECT_DIR$/src/main/resources/mapper/chatMapper.xml" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/mapper/chatRoomMessageMapper.xml" afterPath="$PROJECT_DIR$/src/main/resources/mapper/chatRoomMessageMapper.xml" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/mapper/notWorkMapper.xml" afterPath="$PROJECT_DIR$/src/main/resources/mapper/notWorkMapper.xml" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/mapper/shareMapper.xml" afterPath="$PROJECT_DIR$/src/main/resources/mapper/shareMapper.xml" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/mapper/userMapper.xml" afterPath="$PROJECT_DIR$/src/main/resources/mapper/userMapper.xml" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/spring/spring-context-config.xml" afterPath="$PROJECT_DIR$/src/main/resources/spring/spring-context-config.xml" />
-      <change beforePath="$PROJECT_DIR$/target/MUHelp.war" afterPath="$PROJECT_DIR$/target/MUHelp.war" />
-      <change beforePath="$PROJECT_DIR$/target/MUHelp/WEB-INF/classes/com/script/aop/PurviewCertification.class" afterPath="$PROJECT_DIR$/target/MUHelp/WEB-INF/classes/com/script/aop/PurviewCertification.class" />
-      <change beforePath="$PROJECT_DIR$/target/MUHelp/WEB-INF/classes/com/script/controller/NWController.class" afterPath="$PROJECT_DIR$/target/MUHelp/WEB-INF/classes/com/script/controller/NWController.class" />
-      <change beforePath="$PROJECT_DIR$/target/MUHelp/WEB-INF/classes/com/script/controller/UserController.class" afterPath="$PROJECT_DIR$/target/MUHelp/WEB-INF/classes/com/script/controller/UserController.class" />
-      <change beforePath="$PROJECT_DIR$/target/MUHelp/WEB-INF/classes/com/script/dao/NWDao.class" afterPath="$PROJECT_DIR$/target/MUHelp/WEB-INF/classes/com/script/dao/NWDao.class" />
-      <change beforePath="$PROJECT_DIR$/target/MUHelp/WEB-INF/classes/com/script/dao/UserDao.class" afterPath="$PROJECT_DIR$/target/MUHelp/WEB-INF/classes/com/script/dao/UserDao.class" />
-      <change beforePath="$PROJECT_DIR$/target/MUHelp/WEB-INF/classes/com/script/entity/NotWork.class" afterPath="$PROJECT_DIR$/target/MUHelp/WEB-INF/classes/com/script/entity/NotWork.class" />
-      <change beforePath="$PROJECT_DIR$/target/MUHelp/WEB-INF/classes/com/script/mapper/NotWorkMapper.class" afterPath="$PROJECT_DIR$/target/MUHelp/WEB-INF/classes/com/script/mapper/NotWorkMapper.class" />
-      <change beforePath="$PROJECT_DIR$/target/MUHelp/WEB-INF/classes/com/script/mapper/UserMapper.class" afterPath="$PROJECT_DIR$/target/MUHelp/WEB-INF/classes/com/script/mapper/UserMapper.class" />
-      <change beforePath="$PROJECT_DIR$/target/MUHelp/WEB-INF/classes/com/script/myEnum/ResultCode.class" afterPath="$PROJECT_DIR$/target/MUHelp/WEB-INF/classes/com/script/myEnum/ResultCode.class" />
-      <change beforePath="$PROJECT_DIR$/target/MUHelp/WEB-INF/classes/com/script/myException/ExceptionHandle.class" afterPath="$PROJECT_DIR$/target/MUHelp/WEB-INF/classes/com/script/myException/ExceptionHandle.class" />
-      <change beforePath="$PROJECT_DIR$/target/MUHelp/WEB-INF/classes/com/script/services/ChatServices.class" afterPath="$PROJECT_DIR$/target/MUHelp/WEB-INF/classes/com/script/services/ChatServices.class" />
-      <change beforePath="$PROJECT_DIR$/target/MUHelp/WEB-INF/classes/com/script/services/NWServices.class" afterPath="$PROJECT_DIR$/target/MUHelp/WEB-INF/classes/com/script/services/NWServices.class" />
-      <change beforePath="$PROJECT_DIR$/target/MUHelp/WEB-INF/classes/com/script/services/UserServices.class" afterPath="$PROJECT_DIR$/target/MUHelp/WEB-INF/classes/com/script/services/UserServices.class" />
-      <change beforePath="$PROJECT_DIR$/target/MUHelp/WEB-INF/classes/com/script/utils/adapter/PositionAdapter.class" afterPath="$PROJECT_DIR$/target/MUHelp/WEB-INF/classes/com/script/utils/adapter/PositionAdapter.class" />
-      <change beforePath="$PROJECT_DIR$/target/MUHelp/WEB-INF/classes/com/script/utils/resultType/Result.class" afterPath="$PROJECT_DIR$/target/MUHelp/WEB-INF/classes/com/script/utils/resultType/Result.class" />
-      <change beforePath="$PROJECT_DIR$/target/MUHelp/WEB-INF/classes/com/script/utils/validate/DateTypeValidateUtil.class" afterPath="$PROJECT_DIR$/target/MUHelp/WEB-INF/classes/com/script/utils/validate/DateTypeValidateUtil.class" />
-      <change beforePath="$PROJECT_DIR$/target/MUHelp/WEB-INF/classes/com/script/utils/validate/NWValidateUtil.class" afterPath="$PROJECT_DIR$/target/MUHelp/WEB-INF/classes/com/script/utils/validate/NWValidateUtil.class" />
-      <change beforePath="$PROJECT_DIR$/target/MUHelp/WEB-INF/classes/mapper/chatMapper.xml" afterPath="$PROJECT_DIR$/target/MUHelp/WEB-INF/classes/mapper/chatMapper.xml" />
-      <change beforePath="$PROJECT_DIR$/target/MUHelp/WEB-INF/classes/mapper/chatRoomMessageMapper.xml" afterPath="$PROJECT_DIR$/target/MUHelp/WEB-INF/classes/mapper/chatRoomMessageMapper.xml" />
-      <change beforePath="$PROJECT_DIR$/target/MUHelp/WEB-INF/classes/mapper/notWorkMapper.xml" afterPath="$PROJECT_DIR$/target/MUHelp/WEB-INF/classes/mapper/notWorkMapper.xml" />
-      <change beforePath="$PROJECT_DIR$/target/MUHelp/WEB-INF/classes/mapper/shareMapper.xml" afterPath="$PROJECT_DIR$/target/MUHelp/WEB-INF/classes/mapper/shareMapper.xml" />
-      <change beforePath="$PROJECT_DIR$/target/MUHelp/WEB-INF/classes/mapper/userMapper.xml" afterPath="$PROJECT_DIR$/target/MUHelp/WEB-INF/classes/mapper/userMapper.xml" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/script/aop/PurviewCertification.class" afterPath="$PROJECT_DIR$/target/classes/com/script/aop/PurviewCertification.class" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/script/controller/NWController.class" afterPath="$PROJECT_DIR$/target/classes/com/script/controller/NWController.class" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/script/controller/UserController.class" afterPath="$PROJECT_DIR$/target/classes/com/script/controller/UserController.class" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/script/dao/NWDao.class" afterPath="$PROJECT_DIR$/target/classes/com/script/dao/NWDao.class" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/script/dao/UserDao.class" afterPath="$PROJECT_DIR$/target/classes/com/script/dao/UserDao.class" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/script/entity/NotWork.class" afterPath="$PROJECT_DIR$/target/classes/com/script/entity/NotWork.class" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/script/mapper/NotWorkMapper.class" afterPath="$PROJECT_DIR$/target/classes/com/script/mapper/NotWorkMapper.class" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/script/mapper/UserMapper.class" afterPath="$PROJECT_DIR$/target/classes/com/script/mapper/UserMapper.class" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/script/myEnum/ResultCode.class" afterPath="$PROJECT_DIR$/target/classes/com/script/myEnum/ResultCode.class" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/script/myException/ExceptionHandle.class" afterPath="$PROJECT_DIR$/target/classes/com/script/myException/ExceptionHandle.class" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/script/services/ChatServices.class" afterPath="$PROJECT_DIR$/target/classes/com/script/services/ChatServices.class" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/script/services/NWServices.class" afterPath="$PROJECT_DIR$/target/classes/com/script/services/NWServices.class" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/script/services/UserServices.class" afterPath="$PROJECT_DIR$/target/classes/com/script/services/UserServices.class" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/script/utils/adapter/PositionAdapter.class" afterPath="$PROJECT_DIR$/target/classes/com/script/utils/adapter/PositionAdapter.class" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/script/utils/resultType/Result.class" afterPath="$PROJECT_DIR$/target/classes/com/script/utils/resultType/Result.class" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/script/utils/validate/DateTypeValidateUtil.class" afterPath="$PROJECT_DIR$/target/classes/com/script/utils/validate/DateTypeValidateUtil.class" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/script/utils/validate/NWValidateUtil.class" afterPath="$PROJECT_DIR$/target/classes/com/script/utils/validate/NWValidateUtil.class" />
-      <change beforePath="$PROJECT_DIR$/target/classes/mapper/chatMapper.xml" afterPath="$PROJECT_DIR$/target/classes/mapper/chatMapper.xml" />
-      <change beforePath="$PROJECT_DIR$/target/classes/mapper/chatRoomMessageMapper.xml" afterPath="$PROJECT_DIR$/target/classes/mapper/chatRoomMessageMapper.xml" />
-      <change beforePath="$PROJECT_DIR$/target/classes/mapper/notWorkMapper.xml" afterPath="$PROJECT_DIR$/target/classes/mapper/notWorkMapper.xml" />
-      <change beforePath="$PROJECT_DIR$/target/classes/mapper/shareMapper.xml" afterPath="$PROJECT_DIR$/target/classes/mapper/shareMapper.xml" />
-      <change beforePath="$PROJECT_DIR$/target/classes/mapper/userMapper.xml" afterPath="$PROJECT_DIR$/target/classes/mapper/userMapper.xml" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -113,39 +32,7 @@
     <select />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="ChatController.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/script/controller/ChatController.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="111">
-              <caret line="18" column="29" lean-forward="true" selection-start-line="18" selection-start-column="29" selection-end-line="18" selection-end-column="29" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="userMapper.xml" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/resources/mapper/userMapper.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="784">
-              <caret line="65" column="62" lean-forward="true" selection-start-line="65" selection-start-column="62" selection-end-line="65" selection-end-column="62" />
-              <folding>
-                <marker date="1519741915296" expanded="true" signature="962:1013" ph="SELECT * fro... user_extend" />
-                <marker date="1519741915296" expanded="true" signature="1146:1269" ph="INSERT INTO user_extend" />
-                <marker date="1519741915296" expanded="true" signature="1396:1528" ph="INSERT into user" />
-                <marker date="1519741915296" expanded="true" signature="1639:1774" ph="SELECT * fro... user" />
-                <marker date="1519741915296" expanded="true" signature="1878:1918" ph="SELECT * FRO... user" />
-                <marker date="1519741915296" expanded="true" signature="2005:2157" ph="UPDATE user_extend... " />
-                <marker date="1519741915296" expanded="true" signature="2240:2306" ph="UPDATE user... " />
-                <marker date="1519741915296" expanded="true" signature="2240:2336" ph="UPDATE user... " />
-                <marker date="1519741915296" expanded="true" signature="2387:2418" ph="UPDATE user... " />
-                <marker date="1519741915296" expanded="true" signature="2504:2576" ph="UPDATE user " />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -218,7 +105,6 @@
         <option value="$PROJECT_DIR$/src/main/java/com/script/aop/PurviewCertification.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/script/myEnum/ResultCode.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/script/dao/NWDao.java" />
-        <option value="$PROJECT_DIR$/src/main/resources/mapper/notWorkMapper.xml" />
         <option value="$PROJECT_DIR$/src/main/resources/mapper/shareMapper.xml" />
         <option value="$PROJECT_DIR$/src/main/java/com/script/services/ShareServices.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/script/controller/ShareController.java" />
@@ -239,6 +125,7 @@
         <option value="$PROJECT_DIR$/src/main/java/com/script/services/ChatServices.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/script/entity/ChatId.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/script/controller/ChatController.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/mapper/notWorkMapper.xml" />
       </list>
     </option>
   </component>
@@ -274,7 +161,7 @@
   <component name="MavenRunner">
     <option name="vmOptions" value="-Dmaven.multiModuleProjectDirectory=$M2_HOME" />
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="64" />
     <option name="y" value="26" />
     <option name="width" value="1346" />
@@ -324,8 +211,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
-      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -356,23 +241,6 @@
               <item name="MUHelp" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="script" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="MUHelp" type="b2602c69:ProjectViewProjectNode" />
-              <item name="MUHelp" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="script" type="462c0819:PsiDirectoryNode" />
-              <item name="entity" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="MUHelp" type="b2602c69:ProjectViewProjectNode" />
-              <item name="MUHelp" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="resources" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -387,8 +255,10 @@
           <select />
         </subPane>
       </pane>
-      <pane id="AndroidView" />
+      <pane id="Scope" />
       <pane id="Scratches" />
+      <pane id="AndroidView" />
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -398,10 +268,10 @@
     <property name="com.intellij.database.dataSource.DataSourceTemplate" value="MySQL" />
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="settings.editor.selected.configurable" value="reference.settings.project.maven.runner" />
-    <property name="project.structure.last.edited" value="SDKs" />
+    <property name="project.structure.last.edited" value="Libraries" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.2" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../LintCodeTest" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
   </component>
   <component name="RecentsManager">
     <key name="CopyClassDialog.RECENTS_KEY">
@@ -632,56 +502,49 @@
       <workItem from="1519264381238" duration="1051000" />
       <workItem from="1519271896448" duration="2237000" />
       <workItem from="1519379097308" duration="76414000" />
-      <workItem from="1520035583618" duration="20311000" />
+      <workItem from="1520035583618" duration="20919000" />
+      <workItem from="1520167833149" duration="141000" />
+      <workItem from="1520170067958" duration="191000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="343611000" />
+    <option name="totallyTimeSpent" value="344551000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="744" extended-state="7" />
-    <editor active="true" />
+    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3288889" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3289689" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
-      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32980332" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.17927383" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24962178" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3764321" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3878887" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39934534" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3289689" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.295764" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="true" content_ui="tabs" />
-      <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3288889" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3289689" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
+      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32980332" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.26928896" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.17927383" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24962178" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3764321" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3878887" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.26172465" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -713,106 +576,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/script/entity/Chat.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="108">
-          <caret line="5" column="13" lean-forward="false" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/script/utils/resultType/Result.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="654">
-          <caret line="37" column="5" lean-forward="false" selection-start-line="37" selection-start-column="5" selection-end-line="37" selection-end-column="5" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-aop/5.0.2.RELEASE/spring-aop-5.0.2.RELEASE.jar!/org/springframework/aop/framework/adapter/MethodBeforeAdviceInterceptor.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="117">
-          <caret line="23" column="0" lean-forward="false" selection-start-line="23" selection-start-column="0" selection-end-line="23" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/mapper/loginMapper.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="432">
-          <caret line="46" column="36" lean-forward="true" selection-start-line="46" selection-start-column="36" selection-end-line="46" selection-end-column="36" />
-          <folding>
-            <marker date="1519119587786" expanded="true" signature="1137:1188" ph="SELECT * fro... user_extend" />
-            <marker date="1519119587786" expanded="true" signature="1262:1302" ph="SELECT * fro... user" />
-            <marker date="1519119587786" expanded="true" signature="1382:1511" ph="INSERT INTO login" />
-            <marker date="1519119587786" expanded="true" signature="1613:1677" ph="SELECT * FRO... login" />
-            <marker date="1519119587786" expanded="true" signature="1761:1942" ph="update login... " />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-core/5.0.2.RELEASE/spring-core-5.0.2.RELEASE.jar!/org/springframework/cglib/proxy/MethodProxy.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="104" column="0" lean-forward="false" selection-start-line="104" selection-start-column="0" selection-end-line="104" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-aop/5.0.2.RELEASE/spring-aop-5.0.2.RELEASE.jar!/org/springframework/aop/interceptor/ExposeInvocationInterceptor.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="117">
-          <caret line="43" column="0" lean-forward="false" selection-start-line="43" selection-start-column="0" selection-end-line="43" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-aop/5.0.2.RELEASE/spring-aop-5.0.2.RELEASE.jar!/org/springframework/aop/framework/ReflectiveMethodInvocation.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="100">
-          <caret line="76" column="0" lean-forward="false" selection-start-line="76" selection-start-column="0" selection-end-line="76" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-webmvc/5.0.2.RELEASE/spring-webmvc-5.0.2.RELEASE.jar!/org/springframework/web/servlet/mvc/method/annotation/ServletInvocableHandlerMethod.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="53" column="37" lean-forward="false" selection-start-line="53" selection-start-column="37" selection-end-line="53" selection-end-column="37" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/script/utils/adapter/PositionAdapter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="194">
-          <caret line="12" column="22" lean-forward="false" selection-start-line="12" selection-start-column="22" selection-end-line="12" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/script/entity/NotWork.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="182">
-          <caret line="17" column="20" lean-forward="false" selection-start-line="17" selection-start-column="20" selection-end-line="17" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/script/utils/validate/ShareValidateUtil.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-138">
-          <caret line="12" column="23" lean-forward="false" selection-start-line="12" selection-start-column="23" selection-end-line="12" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/script/utils/validate/NWValidateUtil.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="31">
-          <caret line="56" column="5" lean-forward="false" selection-start-line="56" selection-start-column="5" selection-end-line="56" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/script/aop/PurviewCertification.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="108">
-          <caret line="46" column="47" lean-forward="false" selection-start-line="46" selection-start-column="47" selection-end-line="46" selection-end-column="47" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/script/myEnum/ResultCode.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="54">
@@ -820,24 +583,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/script/dao/NWDao.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="24">
-          <caret line="116" column="16" lean-forward="false" selection-start-line="116" selection-start-column="16" selection-end-line="116" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/script/services/NWServices.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="180">
           <caret line="71" column="0" lean-forward="true" selection-start-line="71" selection-start-column="0" selection-end-line="71" selection-end-column="0" />
-          <folding>
-            <element signature="method#va_evaluateNW#0;class#NWServices#0" expanded="false" />
-            <element signature="method#va_getNWList#0;class#NWServices#0" expanded="false" />
-            <element signature="method#va_getNW#0;class#NWServices#0" expanded="false" />
-            <element signature="method#va_getUserNW#0;class#NWServices#0" expanded="false" />
-            <element signature="method#va_editNW#0;class#NWServices#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -873,7 +622,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="477">
           <caret line="170" column="31" lean-forward="true" selection-start-line="170" selection-start-column="31" selection-end-line="170" selection-end-column="31" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -881,11 +629,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="297">
           <caret line="17" column="17" lean-forward="false" selection-start-line="17" selection-start-column="17" selection-end-line="17" selection-end-column="17" />
-          <folding>
-            <marker date="1518016023786" expanded="false" signature="0:104" ph="/.../" />
-            <marker date="1518016023786" expanded="false" signature="151:304" ph="..." />
-            <marker date="1518016023786" expanded="true" signature="306:371" ph="@{...}" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -893,11 +636,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="243">
           <caret line="15" column="13" lean-forward="false" selection-start-line="15" selection-start-column="13" selection-end-line="15" selection-end-column="13" />
-          <folding>
-            <marker date="1518016023786" expanded="false" signature="0:104" ph="/.../" />
-            <marker date="1518016023786" expanded="false" signature="151:304" ph="..." />
-            <marker date="1518016023786" expanded="true" signature="306:371" ph="@{...}" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -905,7 +643,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="243">
           <caret line="13" column="32" lean-forward="false" selection-start-line="13" selection-start-column="32" selection-end-line="13" selection-end-column="32" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -913,7 +650,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="342">
           <caret line="34" column="5" lean-forward="false" selection-start-line="34" selection-start-column="5" selection-end-line="34" selection-end-column="5" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -929,7 +665,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="216">
           <caret line="14" column="18" lean-forward="false" selection-start-line="14" selection-start-column="18" selection-end-line="14" selection-end-column="18" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -937,7 +672,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="54">
           <caret line="25" column="35" lean-forward="false" selection-start-line="25" selection-start-column="35" selection-end-line="25" selection-end-column="35" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -952,7 +686,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="216">
           <caret line="10" column="9" lean-forward="false" selection-start-line="10" selection-start-column="9" selection-end-line="10" selection-end-column="9" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -964,19 +697,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/script/utils/validate/ValidateUtil.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="139">
-          <caret line="29" column="23" lean-forward="false" selection-start-line="29" selection-start-column="23" selection-end-line="29" selection-end-column="23" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/script/utils/validate/ValidateUtil.java" />
     <entry file="file://$PROJECT_DIR$/src/main/java/com/script/mapper/UserMapper.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="122">
           <caret line="9" column="8" lean-forward="false" selection-start-line="9" selection-start-column="8" selection-end-line="9" selection-end-column="8" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -994,30 +719,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/mapper/notWorkMapper.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="342">
-          <caret line="69" column="46" lean-forward="false" selection-start-line="69" selection-start-column="46" selection-end-line="69" selection-end-column="46" />
-          <folding>
-            <marker date="1519998523517" expanded="true" signature="973:1015" ph="SELECT * FRO... user" />
-            <marker date="1519998523517" expanded="true" signature="1100:1141" ph="SELECT * FRO... user" />
-            <marker date="1519998523517" expanded="true" signature="1249:1409" ph="insert into notwork" />
-            <marker date="1519998523517" expanded="true" signature="1496:2035" ph="update notwork... " />
-            <marker date="1519998523517" expanded="true" signature="2145:2202" ph="SELECT * FRO... notwork" />
-            <marker date="1519998523517" expanded="true" signature="2314:2420" ph="SELECT * FRO... notwork" />
-            <marker date="1519998523517" expanded="true" signature="2314:2421" ph="SELECT * FRO... notwork" />
-            <marker date="1519998523517" expanded="true" signature="2537:2674" ph="SELECT * FRO... notwork" />
-            <marker date="1519998523517" expanded="true" signature="2537:2697" ph="SELECT * FRO... notwork" />
-            <marker date="1519998523517" expanded="true" signature="2537:2721" ph="SELECT * FRO... notwork" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://C:/Program Files/Java/jdk1.8.0_151/src.zip!/java/io/InputStream.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="194">
           <caret line="64" column="24" lean-forward="false" selection-start-line="64" selection-start-column="24" selection-end-line="64" selection-end-column="24" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1025,7 +730,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="105">
           <caret line="49" column="36" lean-forward="false" selection-start-line="49" selection-start-column="36" selection-end-line="49" selection-end-column="36" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1033,13 +737,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="243">
           <caret line="19" column="54" lean-forward="false" selection-start-line="19" selection-start-column="54" selection-end-line="19" selection-end-column="54" />
-          <folding>
-            <marker date="1520069123467" expanded="true" signature="762:802" ph="SELECT * FRO... user" />
-            <marker date="1520069123467" expanded="true" signature="930:1066" ph="INSERT INTO share" />
-            <marker date="1520069123467" expanded="true" signature="1180:1313" ph="SELECT * fro... share" />
-            <marker date="1520069123467" expanded="true" signature="1180:1332" ph="SELECT * fro... share" />
-            <marker date="1520069123467" expanded="true" signature="1438:1480" ph="SELECT * FRO... share" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1047,7 +745,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="86">
           <caret line="32" column="21" lean-forward="false" selection-start-line="32" selection-start-column="21" selection-end-line="32" selection-end-column="21" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1055,7 +752,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="213">
           <caret line="34" column="0" lean-forward="true" selection-start-line="34" selection-start-column="0" selection-end-line="34" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1063,7 +759,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="194">
           <caret line="54" column="23" lean-forward="false" selection-start-line="54" selection-start-column="23" selection-end-line="54" selection-end-column="23" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1071,7 +766,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-219">
           <caret line="65" column="18" lean-forward="false" selection-start-line="65" selection-start-column="18" selection-end-line="65" selection-end-column="18" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1079,7 +773,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="117">
           <caret line="121" column="0" lean-forward="false" selection-start-line="121" selection-start-column="0" selection-end-line="121" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1087,7 +780,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-135">
           <caret line="24" column="0" lean-forward="false" selection-start-line="24" selection-start-column="0" selection-end-line="24" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1095,7 +787,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="162">
           <caret line="29" column="0" lean-forward="false" selection-start-line="29" selection-start-column="0" selection-end-line="29" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1103,7 +794,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="164">
           <caret line="12" column="29" lean-forward="false" selection-start-line="12" selection-start-column="29" selection-end-line="12" selection-end-column="29" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1111,7 +801,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="112">
           <caret line="21" column="9" lean-forward="false" selection-start-line="21" selection-start-column="9" selection-end-line="21" selection-end-column="9" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1119,7 +808,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="216">
           <caret line="15" column="17" lean-forward="false" selection-start-line="15" selection-start-column="17" selection-end-line="15" selection-end-column="17" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1127,11 +815,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-64">
           <caret line="18" column="14" lean-forward="false" selection-start-line="18" selection-start-column="14" selection-end-line="18" selection-end-column="14" />
-          <folding>
-            <element signature="imports" expanded="false" />
-            <element signature="e#705#706#0" expanded="false" />
-            <element signature="e#743#744#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1139,13 +822,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="189">
           <caret line="16" column="28" lean-forward="false" selection-start-line="16" selection-start-column="28" selection-end-line="16" selection-end-column="28" />
-          <folding>
-            <marker date="1520149806041" expanded="true" signature="562:599" ph="SELECT * FRO... user" />
-            <marker date="1520149806041" expanded="true" signature="647:667" ph="DELETE FROM chatroom... " />
-            <marker date="1520149806041" expanded="true" signature="758:881" ph="INSERT INTO chatroom" />
-            <marker date="1520149806041" expanded="true" signature="1004:1197" ph="SELECT * FRO... chatroom" />
-            <marker date="1520149806041" expanded="true" signature="1004:1209" ph="SELECT * FRO... chatroom" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1153,7 +830,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="109">
           <caret line="34" column="0" lean-forward="true" selection-start-line="34" selection-start-column="0" selection-end-line="34" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1169,7 +845,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="410">
           <caret line="90" column="20" lean-forward="false" selection-start-line="90" selection-start-column="20" selection-end-line="90" selection-end-column="20" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1177,7 +852,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="90">
           <caret line="70" column="27" lean-forward="false" selection-start-line="70" selection-start-column="27" selection-end-line="70" selection-end-column="27" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1185,14 +859,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="122">
           <caret line="28" column="57" lean-forward="true" selection-start-line="28" selection-start-column="57" selection-end-line="28" selection-end-column="57" />
-          <folding>
-            <marker date="1520149805954" expanded="true" signature="623:660" ph="SELECT * FRO... user" />
-            <marker date="1520149805954" expanded="true" signature="740:883" ph="insert into chat_extend" />
-            <marker date="1520149805954" expanded="true" signature="930:953" ph="DELETE FROM chat_extend... " />
-            <marker date="1520149805954" expanded="true" signature="1067:1192" ph="select count... chat_extend" />
-            <marker date="1520149805954" expanded="true" signature="1301:1416" ph="select * fro... chat_extend" />
-            <marker date="1520149805954" expanded="true" signature="1301:1419" ph="select * fro... chat_extend" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1212,11 +879,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="122">
           <caret line="20" column="77" lean-forward="false" selection-start-line="20" selection-start-column="77" selection-end-line="20" selection-end-column="77" />
-          <folding>
-            <marker date="1519119587775" expanded="true" signature="604:642" ph="SELECT * FRO... user" />
-            <marker date="1519119587775" expanded="true" signature="747:819" ph="INSERT into chat" />
-            <marker date="1519119587775" expanded="true" signature="928:1059" ph="SELECT * FRO... chat" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1224,7 +887,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="243">
           <caret line="18" column="32" lean-forward="false" selection-start-line="18" selection-start-column="8" selection-end-line="18" selection-end-column="32" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1232,7 +894,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="287">
           <caret line="66" column="21" lean-forward="false" selection-start-line="66" selection-start-column="21" selection-end-line="66" selection-end-column="21" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1240,7 +901,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="112">
           <caret line="33" column="23" lean-forward="false" selection-start-line="33" selection-start-column="23" selection-end-line="33" selection-end-column="23" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1248,34 +908,57 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="139">
           <caret line="67" column="18" lean-forward="false" selection-start-line="67" selection-start-column="18" selection-end-line="67" selection-end-column="18" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/script/controller/ChatController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="111">
-          <caret line="18" column="29" lean-forward="true" selection-start-line="18" selection-start-column="29" selection-end-line="18" selection-end-column="29" />
-          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/mapper/userMapper.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="784">
-          <caret line="65" column="62" lean-forward="true" selection-start-line="65" selection-start-column="62" selection-end-line="65" selection-end-column="62" />
+        <state relative-caret-position="1755">
+          <caret line="65" column="62" lean-forward="false" selection-start-line="65" selection-start-column="62" selection-end-line="65" selection-end-column="62" />
           <folding>
-            <marker date="1519741915296" expanded="true" signature="962:1013" ph="SELECT * fro... user_extend" />
-            <marker date="1519741915296" expanded="true" signature="1146:1269" ph="INSERT INTO user_extend" />
-            <marker date="1519741915296" expanded="true" signature="1396:1528" ph="INSERT into user" />
-            <marker date="1519741915296" expanded="true" signature="1639:1774" ph="SELECT * fro... user" />
-            <marker date="1519741915296" expanded="true" signature="1878:1918" ph="SELECT * FRO... user" />
-            <marker date="1519741915296" expanded="true" signature="2005:2157" ph="UPDATE user_extend... " />
-            <marker date="1519741915296" expanded="true" signature="2240:2306" ph="UPDATE user... " />
-            <marker date="1519741915296" expanded="true" signature="2240:2336" ph="UPDATE user... " />
-            <marker date="1519741915296" expanded="true" signature="2387:2418" ph="UPDATE user... " />
-            <marker date="1519741915296" expanded="true" signature="2504:2576" ph="UPDATE user " />
+            <marker date="1520166320935" expanded="true" signature="962:1013" ph="SELECT * fro... user_extend" />
+            <marker date="1520166320935" expanded="true" signature="1146:1269" ph="INSERT INTO user_extend" />
+            <marker date="1520166320935" expanded="true" signature="1396:1528" ph="INSERT into user" />
+            <marker date="1520166320935" expanded="true" signature="1639:1774" ph="SELECT * fro... user" />
+            <marker date="1520166320935" expanded="true" signature="1878:1918" ph="SELECT * FRO... user" />
+            <marker date="1520166320935" expanded="true" signature="2005:2157" ph="UPDATE user_extend... " />
+            <marker date="1520166320935" expanded="true" signature="2240:2306" ph="UPDATE user... " />
+            <marker date="1520166320935" expanded="true" signature="2240:2336" ph="UPDATE user... " />
+            <marker date="1520166320935" expanded="true" signature="2387:2418" ph="UPDATE user... " />
+            <marker date="1520166320935" expanded="true" signature="2504:2576" ph="UPDATE user " />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/script/controller/ChatController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="162">
+          <caret line="18" column="29" lean-forward="false" selection-start-line="18" selection-start-column="29" selection-end-line="18" selection-end-column="29" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/mapper/notWorkMapper.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="217">
+          <caret line="61" column="32" lean-forward="false" selection-start-line="61" selection-start-column="28" selection-end-line="61" selection-end-column="33" />
+          <folding>
+            <marker date="1520170260825" expanded="true" signature="973:1015" ph="SELECT * FRO... user" />
+            <marker date="1520170260825" expanded="true" signature="1100:1141" ph="SELECT * FRO... user" />
+            <marker date="1520170260825" expanded="true" signature="1249:1409" ph="insert into notwork" />
+            <marker date="1520170260825" expanded="true" signature="1496:2035" ph="update notwork... " />
+            <marker date="1520170260825" expanded="true" signature="2145:2202" ph="SELECT * FRO... notwork" />
+            <marker date="1520170260825" expanded="true" signature="2314:2435" ph="SELECT * FRO... notwork" />
+            <marker date="1520170260825" expanded="true" signature="2551:2735" ph="SELECT * FRO... notwork" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/script/dao/NWDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="756">
+          <caret line="116" column="16" lean-forward="false" selection-start-line="116" selection-start-column="16" selection-end-line="116" selection-end-column="16" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1369,7 +1052,7 @@
       </state>
       <state key="ProjectLibrariesConfigurable.UI">
         <settings>
-          <last-edited>Maven: c3p0:c3p0:0.9.1.2</last-edited>
+          <last-edited>Five</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>

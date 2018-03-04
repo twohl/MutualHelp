@@ -59,7 +59,7 @@
     <select id="selectNotWorkByUser" parameterType="java.util.Map" resultMap="NotWork">
         SELECT *
         FROM notwork
-        WHERE state !=2 AND (organiser = #{user_id} OR accepter = #{user_id})
+        WHERE state !=2 AND state !=3 AND (organiser = #{user_id} OR accepter = #{user_id})
     </select>
 
     <select id="selectNotWorkByPosition" parameterType="java.util.Map" resultMap="NotWork">
