@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.script.mapper.LoginMapper">
+
+    <resultMap id="UserInfo" type="com.script.entity.UserInfo">
+        <id column="id" property="id"/>
+        <result column="address" property="address"/>
+        <result column="sign" property="sign"/>
+        <result column="hobby" property="hobby"/>
+    </resultMap>
+
+
+
+    <resultMap id="User" type="com.script.entity.User">
+        <id column="id" property="id"/>
+        <result column="nickname" property="nickname"/>
+        <result column="gender" property="gender"/>
+        <association property="userInfo" column="user_ex_id" select="selectUserInfoById"/>
+    </resultMap>
+
+
+
+    <resultMap id="Login" type="com.script.entity.Login">
+        <id column="username" property="username"/>
+        <result property="password" column="password"/>
+        <association property="user" column="user_id" select="selectUserById"/>
+    </resultMap>
+
+    <select id="selectUserInfoById" resultMap="UserInfo">
+        SELECT * from user_extend where id = #{user_ex_id)}
+    </select>
+
+    <select id="selectUserById" resultMap="User">
+        SELECT * from user where id = #{user_id}
+    </select>
+    <insert id="addLogin" parameterType="java.util.Map">
+        INSERT INTO
+        login(username, password, user_id,lastLogin)
+        VALUES (#{username},#{password},#{user_id},#{lastLogin})
+    </insert>
+
+    <select id="selectLogin" parameterType="java.util.Map" resultMap="Login">
+        SELECT *
+        FROM login
+        WHERE username = #{username}
+    </select>
+
+    <update id="updateLogin" parameterType="java.util.Map">
+        update login
+        SET
+        <if test="password != null">
+          password = #{password},
+        </if>
+          lastLogin = #{lastLogin}
+        WHERE username = #{username}
+    </update>
+
+</mapper>
